@@ -1,92 +1,118 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="style.css" />
-        <title>WATSUP MOBSTERS, IT'S YA PAL PIPER</title>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Piper Codes Things</title>
+  </head>
+  <body id="home">
+    <header>
+      <nav>
+        <ul id="nav-list">
+          <li><a href="#home" class="nav-item">Home</a></li>
+          <li><a href="#about" class="nav-item">About</a></li>
+          <li><a href="#projects" class="nav-item">Projects</a></li>
+          <!-- <li><a href="#art" class="nav-item">Art</a></li> -->
+        </ul>
+      </nav>
+    </header>
 
-        <!--Website should include:
-                * Picture of you
-                * Brief Bio
-                * Intro to who you are/what you enjoy doing/interests, etc 
-        -->
-    </head>
-    <body>
-        <div id="container">
-            <h1>Who is Piper?</h1>
-            <img src="C:\Users\Sarah\Desktop\mugshot.jpg" alt="mugshot" id="mugshot"/>
-            <div id="main">
-                <p>
-                <span class="emphasis">Hi, I'm Piper!</span> I'm a 34 year old non binary person who has been dabbling in code for years, without ever realising I could turn my weird hobby into a career.
-                </p> 
+    <main>
+      <!--Home Page -->
+      <div class="box" id="home-box">
+        <h1>Hi, I'm Piper and I create things</h1>
+        <div id="social-box">
+          <ul>
+            <li>
+              <a href="http://www.github.com/piperbates" target="_blank"
+                ><img src="images/gh.png" alt="github logo" id="gh-icon"
+              /></a>
+            </li>
+
+            <li>
+              <a href="http://www.twitter.com/piperstrangeart" target="_blank">
+                <img src="images/tw.png" alt="twitter logo" id="tw-icon"
+              /></a>
+            </li>
+
+            <li>
+              <a href="http://www.instagram.com/piperstrangeart" target="_blank"
+                ><img src="images/ig.jpg" alt="instagram logo" id="ig-icon"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--home_container end-->
+
+      <!--About Page-->
+      <div id="about" class="box">
+        <h2>About</h2>
+        <p>
+          For the last five years I've been working as a freelance illustrator,
+          working on children's books, comics, infographics and whatever I felt
+          like doodling at the time. Now I've decided to work on my own personal
+          projects and started learning to code through the School of Code
+          Bootcamp!
+        </p>
+      </div>
+      <!--about_container end-->
+
+      <!--Projects Page-->
+      <div id="projects" class="box">
+        <h2>Projects</h2>
+        <div id="draw-app" class="project-example">
+          <a href="https://piperbates.github.io/drawing-app/" target="_blank"
+            ><img
+              src="images/Screenshot 2020-10-23 212926.png"
+              alt="Simple Drawing Game"
+          /></a>
+          <a href="https://piperbates.github.io/drawing-app/" target="_blank" class="project-link"
+            >A Simple Drawing Game</a>. A drawing game made using HTML5 canvas and javascript.<br /><a
+            href="https://github.com/piperbates/drawing-app" target="_blank">View on github</a>.
+        </div>
+        <div id="poke" class="project-example">
+          <a
+            href="https://piperbates.github.io/pokemon-card-generator/"
+            target="_blank"
+            ><img src="images/pkm-card.png" alt="pokemon card generator"
+          /></a>
+          <a
+            href="https://piperbates.github.io/pokemon-card-generator/"
+            target="_blank"
+            >A Pokemon Card Generator</a
+          >. Used <a href="http://www.pokeapi.co">PokeAPI</a>, this generates a
+          random Pokemon Card, or lets the user select a Pokemon based on the
+          dex number. <br /><a
+            href="https://github.com/piperbates/pokemon-card-generator"
+            target="_blank"
+            >View on github</a
+          >.
+        </div>
+
+        <div id="rps" class="project-example">
+          <a href="https://piperbates.github.io/rps/" target="_blank"
+            ><img src="images/rps-ss.png" alt="rock paper scissors"
+          /></a>
+          <a href="https://piperbates.github.io/rps/" target="_blank" class="project-link"
+            >Rock Paper Scissors</a>. A simple rock paper scissors game.<br /><a href="https://github.com/piperbates/rps" target="_blank">View on github</a>
+          </div>
+      </div>
+      <!--projects_container end-->
+
+      <!--contact Page
+            <div id="contact" class="box">
+                <h2>Contact</h2>
                 
-                <p>Before School of Code, I was working as a freelance illustrator, and have illustrated children's books, published comic strips, and worked for a bunch of companies designing brochuers. I love to draw and create,
-                but the isolation of working for myself has never been ideal, and I would much rather work on my own personal projects rather than illustration work for other people.
-                </p> 
-                <p>I love working in teams with other creative people,
-                collaborating on projects and coming up with new ideas, so when I saw School of Code was open for applicants, I knew this was the path for me!
-                </p>
+            </div>contact_container end-->
+    </main>
 
-                <h2>More information about Piper</h2>
-                    <p>
-                        Outside of coding and drawing, I'm pretty much constantly getting myself into new things. I'm passionate about so many things.
-                        I'm very interested in social politics, especially LGBTQIA+ rights, gender equality, feminism, anti-racism and all that Social Justice
-                        Warrior stuff (although do consider myself more of a social justice bard).
-                        </p>
-                    <p>In my free time, I'm likely to be found playing videogames or playing my ukulele and pretending I can sing.                          
-                        I live in Warwick with my partner, our housemate, and 6 pet rats!
-                    </p>
+    <footer>
+      <p>
+        &copy; Piper Bates 2020 | piperbates42@gmail.com |
+        <a href="https://github.com/piperbates">Github</a>
+      </p>
+    </footer>
 
-                <h2>Frequently Asked Questions</h2>
-                <p class="question">Favourite videogame?</p>
-                <p class="answer">This changes on a regular basis but I recently finished Subnautica for the first time and absolutely loved it (despite it terrifying me). I also love the Pokémon 
-                    main games, Animal Crossing, Overwatch, and Minecraft. Not a huge fan of (most) FPS or Horror games, but will happily play them with a group of friends or if the storyline is good.
-                </p>
-                <p class="question">Pet rats?</p>
-                <p class="answer">Pet rats! 
-                    <img src="C:\Users\Sarah\Desktop\bootcamp\coraline.jpg" alt="Coraline" />
-                    I have 6 girls, their names are Mist, Fog, Brownie, Fudge, Coraline, and Void. I will be more than happy to spam you with photographs of them, they are my babies, I adore them,
-                    please ask me for photos of my pets, I'm obsessed.</p>
-                </p>
-                <p class="question">
-                    What are your pronouns? 
-                </p>
-                <p class="answer">
-                    They / them! I do not like she / her or he / him pronouns and will probably correct you if you get it wrong. However, if you <strong>do</strong> get it
-                    wrong, I won't be angry or upset! Making an effort &gt; accuracy. (If you don't understand why I prefer they / them pronouns, <a href="https://www.verywellmind.com/what-does-it-mean-to-be-non-binary-or-have-non-binary-gender-4172702#:~:text=Non%2Dbinary%20gender%20identity%20is,gender%2C%20or%20something%20else%20entirely.">check out this article</a> which explains
-                    what being non-binary means)
-                </p>
-
-                <p class="question">
-                    Do you have a nickname?
-                </p>
-                <p class="answer">
-                    I mean, if "Piper" is too much of a mouthful for you, I like Pip, Pippin, or Pippo. Not a fan of Pipes, but feel free to tease me and see where it gets you ;)
-                </p>
-                <p class="question">
-                    What are your tattoos?
-                </p>
-                <p class="answer">I have 6 tattoos (and would like more). I have a triceratops tattoo on my right shoulderblade, a raven tattoo on my left shoulderblade, a rat pawprint from one
-                    of my pet rats who died in 2018, a tattoo of Marcelene the Vampire Queen next to a pumpkin on my left shoulder, and a sunflower / anchor on my right shoulder. Some of them have
-                    meanings, others don't. I love tattoos! 
-                </p>
-                <p class="question">I would like to follow you... ;)</p>
-                <p class="answer">I am going to assume you mean on social media, because the alternative would be creepy, in which case here are a bunch of links:
-                    <br /> 
-                    <div style="text-align: center;">
-                        <a href="http://www.twitter.com/piperstrangeart">Twitter</a> | 
-                        <a href="http://www.instagram.com/piperstrangeart">Instagram</a> <br/>
-                        <a href="http://www.github.com/piperbates">GitHub</a> (Not social media, but probably important for fellow programmers)
-                    </div>
-                </p> 
-                
-
-            </div><!--/main-->
-
-            <footer>
-                A footer, for some reason.
-            </footer>
-
-        </div><!--/container-->
-
-    </body>
+    <script src="sandbox.js"></script>
+  </body>
 </html>

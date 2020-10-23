@@ -1,50 +1,147 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: #363636;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 0px; margin: 0px;
-    text-align: justify;
+    background-image: url("images/brain\ mush.png");
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
 }
 
-#container {
-    width: 40%;
-    margin: auto;
-    background-color: #fff;
+header {
+    background-image:linear-gradient(to right, #38347B, #463961, #865096);
+    width: 100%;
+    margin: 0px;
+    height: 60px;
 }
 
-#main {
-    padding: 0px 10px 10px 10px;
+nav {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
 }
 
-img {
-    width: 250px;
-    display: inline-block;
-    float: right;
-    padding: 3px;
+h2 {
+    text-align: left;
 }
 
-h1, footer {
+
+#home-box
+{
+    text-align: center;
+}
+
+#home-box img {
+    width: 200px;
+}
+
+.box {
+    border: 15px #615874 solid;
+    margin-bottom: 50px;
+    padding: 0px;
+    background: white;
+    opacity: 75%;
+}
+
+.box a {
+    color: #615874;
+    text-decoration: none;
+}
+
+.box a:hover {
+    color:#352f44;
+    text-decoration: underline;
+}
+#projects, #art {
+    text-align:center;
+}
+
+
+.project-example, .art-example {
+    margin: 5px;
     padding: 5px;
-    background-color: grey;
-    color: #dfdfdf;
+    width: 300px;
+    text-align: center;
+    display:inline-block;
+}
+
+.project-desc {
+    height: 200px;
+    vertical-align: top;
+}
+
+.project-example img, .art-example img {
+    width: 300px;
+    vertical-align: top;
+    height: 300px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h3, h2 {
+    background: linear-gradient(to right, #38347B, #463961, #865096);
+    padding:30px;
+    margin:-1px;
+    color: white;
+}
+
+h1, h2, h3 {
+    letter-spacing: 0.3pc;
+}
+
+header li {
+    display: inline;
+}
+
+nav li {
+    display: inline;
+    color: white;
+    text-transform: uppercase;
+}
+
+nav a {
+    margin: 5px;
+    padding: 10px;
+    scroll-behavior: smooth;
+    color: white;
+    text-decoration: none;
+    background-color:#865096;
+    border-radius: 20%;
+}
+
+nav a:hover{
+    background:black;
+}
+
+footer a {
+    color: white;
+}
+footer a:hover {
+    color: grey;
+}
+
+#social-box li {
+    display: inline;
+    margin-left: 40px;
 }
 
 footer {
-    margin-top: 10px;
-    padding: 10px;
-    background-color: grey;
+    text-align: center; 
+    padding: 30px;
+    color: white;
+    background: linear-gradient(to right, #38347B, #463961, #865096);
+    height: 100px;
+    opacity: 75%;
+    margin: -10px;
 }
 
-.question {
-    font-weight: bold;
+main p {padding: 20px;
+    font-size: 20px;
 }
 
-.answer {
-    margin-left: 10px;
-    margin-right: 10px;
-    font-style: italic;
 
-}
-
-.emphasis {
-    font-weight: bold;
-}
