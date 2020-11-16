@@ -1,0 +1,21 @@
+{
+  "name": "patricks-bookcase",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node -r dotenv/config ./bin/www",
+    "dropTable": "node -r dotenv/config ./db/scripts/dropTable.js",
+    "createTable": "node -r dotenv/config ./db/scripts/createTable.js"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "express": "^4.16.4",
+    "morgan": "~1.9.1",
+    "pg": "^8.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
