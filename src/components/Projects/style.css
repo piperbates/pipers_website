@@ -1,0 +1,30 @@
+#project-box {
+    width: 100%;
+}
+
+#project-h1 {
+    font-size: 7vw;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 600px) and (min-width: 401px){
+    #project-h1 {
+        font-size: 10vw;
+        text-align: center;
+    } 
+}
+
+@media screen and (max-width: 400px) and (min-width: 301px){
+    #project-h1 {
+        font-size: 15vw;
+        text-align: center;
+    } 
+}
+
+@media screen and (max-width: 300px){
+    #project-h1 {
+        font-size: 20vw;
+        text-align: center;
+    } 
+}

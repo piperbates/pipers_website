@@ -1,0 +1,42 @@
+
+
+/* Variables */
+:root {
+  /* Colour Scheme */
+  --main-bg-color: #F0F4EF;
+  --green: #A9EFAF;;
+  --light-blue: #B4CDED;
+  --med-blue: #344966;
+  --main-text-color: #0D1821;
+  /* Fonts */
+
+  --header-font: "pipers_handwritingregular";
+  --regular-font: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0; padding: 0px;
+  font-family: var(--regular-font);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--header-font)
+}
+
+body {
+  background: url("./images/bg.png");
+}
+
+html, body
+{
+    height: 100%;
+}
+
+#root {
+  height: 100%;
+
+}
