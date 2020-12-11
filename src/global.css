@@ -13,7 +13,6 @@
   --header-font: "pipers_handwritingregular";
   --regular-font: Arial, Helvetica, sans-serif;
 }
-
 html {
   scroll-behavior: smooth;
 }
@@ -31,12 +30,15 @@ body {
   background: url("./images/bg.png");
 }
 
-html, body
+a {
+  text-decoration: none;
+}
+/* html, body
 {
-    height: 100%;
+  border: 1px solid blue;
 }
 
 #root {
-  height: 100%;
-
-}
+  border: 1px solid green;
+  
+} */

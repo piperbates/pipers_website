@@ -1,9 +1,9 @@
 import React from "react";
 import "./style.css";
-import "../../box-style.css"
+import "../../../box-style.css"
 
 export default function Projects() {
-  return (<div className="anchor-box"><a name="projects" href="#"></a>
+  return (<div className="anchor-box"><a name="projects" href="/#">&nbsp;</a>
 
     <div id="project-container" className="box">
       <div id="project-box">

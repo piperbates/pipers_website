@@ -12,7 +12,13 @@ export default function NavBar() {
           <a href="#about">About</a>
         </li>
         <li>
-          <a href="#projects">Projects</a>
+          <a href="#projects">Project</a>
+        </li>
+        <li>
+          <a href="#art">Art</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
         </li>
       </ul>
     </nav>

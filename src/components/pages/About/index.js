@@ -1,10 +1,10 @@
 import React from "react";
 import "./style.css";
-import "../../box-style.css"
+import "../../../box-style.css"
 
 export default function About() {
   return (<div className="anchor-box">
-  <a name="about" href="#"></a>
+  <a name="about" href="/#">&nbsp;</a>
      <div id="about-container" className="box">
       <div id="about-box">
     

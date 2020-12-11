@@ -2,7 +2,7 @@
 
 import React from "react";
 import "./style.css";
-import "../../box-style.css"
+import "../../../box-style.css"
 
 export default function Home() {
    return (<div id="home-container" class="box">

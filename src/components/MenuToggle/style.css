@@ -1,32 +1,37 @@
 /* Toggle Menu Display */
+@media screen and (min-width: 701px) {
+  #menu-toggle-image, #menu-toggle {
+    display: none;
+  }
+}
 
+@media screen and (max-width: 700px) {
 nav {
-    display: flex;
-    opacity: 0;
-  transition: opacity .5s ease-out;
+  display: flex;
 }
 
 #menu-toggle-image {
-    width: 100px;
+  width: 100px;
 }
+
 #menu-toggle {
   display: none;
 }
 #menu-toggle:checked ~ nav {
-    display: flex;
+  display: flex;
   opacity: 1;
-  transition: opacity .5s ease-in;
+  transition: opacity 0.2s ease-in;
 }
 
 /* Display */
 #navigation-bar {
-    display: flex;
-    position: fixed;
-    top: 0;
-    right: 0;
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
 }
-
 
 /* #menu-toggle:checked ~ #nav-hidden {
     display: block;
   } */
+}
