@@ -3,7 +3,7 @@ import "./style.css";
 import "../../box-style.css"
 
 export default function Projects() {
-  return (<div className="anchor-box" name="projects">
+  return (<div className="anchor-box"><a name="projects" href="#"></a>
 
     <div id="project-container" className="box">
       <div id="project-box">
