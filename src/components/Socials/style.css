@@ -1,9 +1,3 @@
-#socials {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-}
-
 #socials li {
     display: inline;
     padding: 10px;
@@ -15,4 +9,23 @@
 
 #socials a:hover {
     color: var(--light-blue);
+}
+
+@media screen and (min-width: 701px) {
+#socials {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+
+}
+
+@media screen and (max-width: 700px) {
+    #socials {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+    }
+    
 }

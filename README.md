@@ -1,5 +1,5 @@
 # Pipers Website
-View live site: http://piperbates.netlify.com
+View live site: http://piperbates.netlify.app
 
 *** To Do ***
 

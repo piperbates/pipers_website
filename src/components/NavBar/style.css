@@ -42,9 +42,14 @@ nav a:hover {
   nav li:not(:first-child) {
     margin-left: 50px;
   }
+
+  #nav-socials {
+      display: none;
+  }
 }
 
 @media screen and (max-width: 700px) {
+    
   #navigation-bar {
     width: 100%;
     display: flex;
@@ -55,9 +60,9 @@ nav a:hover {
     opacity: 0;
     transition: opacity 0.2s ease-out;
     position: absolute;
-    top: 10px;
-    right: 90px;
-    width: 70%;
+    top: 40px;
+    left: 10px;
+    width: 50%;
     border-radius: 3px;
     background-color: var(--main-bg-color);
     padding: 20px;

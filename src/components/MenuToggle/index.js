@@ -20,6 +20,8 @@ function toggle(){
         <img src={menuDisplay ? menutoggle : menuhide} id="menu-toggle-image" alt="toggle menu" />
       </label>
       <NavBar />
+
+      
     </div>
   );
 }
