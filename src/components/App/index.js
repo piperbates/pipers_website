@@ -5,6 +5,7 @@ import Projects from "../pages/Projects";
 import Art from "../pages/Art";
 import Contact from "../pages/Contact";
 
+import Socials from "../Socials";
 import Footer from "../Footer";
 import MenuToggle from "../MenuToggle"; 
 
@@ -19,6 +20,7 @@ function App() {
       <Projects />
       <Art />
       <Contact />
+      <Socials/>
       <Footer />
     </main>
   </div>

@@ -1,0 +1,18 @@
+#socials {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#socials li {
+    display: inline;
+    padding: 10px;
+}
+
+#socials a {
+    color: var(--med-blue);
+}
+
+#socials a:hover {
+    color: var(--light-blue);
+}

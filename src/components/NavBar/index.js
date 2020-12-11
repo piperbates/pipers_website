@@ -6,19 +6,19 @@ export default function NavBar() {
     <nav>
       <ul>
         <li>
-          <a href="#top">Home</a>
+          <a href="#top"><i class="fas fa-home icon"></i>Home</a>
         </li>
         <li>
-          <a href="#about">About</a>
+          <a href="#about"><i class="fas fa-grin-beam icon"></i>About</a>
         </li>
         <li>
-          <a href="#projects">Project</a>
+          <a href="#projects"><i class="fas fa-code icon"></i>Projects</a>
         </li>
         <li>
-          <a href="#art">Art</a>
+          <a href="#art"><i class="fas fa-paint-brush icon"></i>Art</a>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <a href="#contact"><i class="fas fa-phone icon"></i>Contact</a>
         </li>
       </ul>
     </nav>
