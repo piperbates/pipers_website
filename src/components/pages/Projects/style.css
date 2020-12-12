@@ -1,3 +1,9 @@
+#project-box::after {
+    background: url("../../../images/laptop-scribble.png") no-repeat;
+    background-position: left;
+    background-size: 300px;
+}
+
 .smol-project-box{
     display: flex;
     width: 200px;
