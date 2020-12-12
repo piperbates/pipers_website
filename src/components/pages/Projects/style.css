@@ -11,6 +11,7 @@
     justify-content: center;
     align-items: center;
     margin: 10px;
+
 }
 
 .smol-project-box img {
@@ -24,6 +25,13 @@
 }
 .smol-project-box a:hover {
     color: var(--light-blue)
+}
+
+@media screen and (min-width: 700px){
+    .smol-project-box {
+    margin-left: 80px;
+
+    }
 }
 
 /* --light-blue: #B4CDED;
