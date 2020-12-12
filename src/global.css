@@ -32,6 +32,17 @@ body {
 
 a {
   text-decoration: none;
+  border-width: 0px;
+}
+
+a:active {
+  text-decoration: none;
+  border-width: 0px;
+}
+
+p {
+  text-align: center;
+  font-family: var(--regular-font);
 }
 /* html, body
 {

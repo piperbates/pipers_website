@@ -7,17 +7,17 @@ export default function Socials() {
       <ul>
         <li>
           <a href="http://www.github.com/piperbates">
-          <i class="fab fa-github"></i>
+          <i className="fab fa-github"></i>
           </a>
         </li>
         <li>
           <a href="http://www.linkedin.com/in/piperbates">
-          <i class="fab fa-linkedin-in"></i>
+          <i className="fab fa-linkedin-in"></i>
           </a>
         </li>
         <li>
           <a href="http://www.twitter.com/piperstrangeart">
-            <i class="fab fa-twitter"></i>
+            <i className="fab fa-twitter"></i>
           </a>
         </li>
       </ul>
