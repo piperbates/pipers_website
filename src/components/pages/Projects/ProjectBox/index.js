@@ -4,7 +4,7 @@ import React from "react";
 export default function ProjectBox(props) {
   return <div className="smol-project-box">
     
-        <h2>{props.title}</h2>
+        <h3>{props.title}</h3>
     <img src={props.imgSrc} alt={props.title} />
 
       <a href={props.liveLink}>
@@ -12,8 +12,12 @@ export default function ProjectBox(props) {
         <p>{props.desc}</p>
 
           <p>
-            <a href={props.liveLink}>View Live</a><br/>
-            <a href={props.link}>View On GitHub</a>
+          {props.liveLink ? <><a href={props.liveLink}>View Live</a><br/></> : ""}
+
+            
+
+            {props.link ? <a href={props.link}>View On GitHub</a> : ""}
+            
           </p>
     
   </div>;

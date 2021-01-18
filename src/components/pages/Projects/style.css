@@ -1,7 +1,16 @@
-#project-box::after {
+/* #project-box::after {
     background: url("../../../images/laptop-scribble.png") no-repeat;
     background-position: left;
     background-size: 300px;
+} */
+
+#project-container {
+    display: block;
+}
+
+#project-container img {
+    width: 200px; height: 200px;
+
 }
 
 .smol-project-box{

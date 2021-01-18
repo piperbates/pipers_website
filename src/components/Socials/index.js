@@ -1,25 +1,25 @@
 import React from "react";
 import "./style.css";
+import { socialsArr } from "../../data/socials";
 
 export default function Socials() {
+console.log(process.env.REACT_APP_USER_ID)
   return (
     <div id="socials">
       <ul>
-        <li>
-          <a href="http://www.github.com/piperbates">
-          <i className="fab fa-github"></i>
-          </a>
-        </li>
-        <li>
-          <a href="http://www.linkedin.com/in/piperbates">
-          <i className="fab fa-linkedin-in"></i>
-          </a>
-        </li>
-        <li>
-          <a href="http://www.twitter.com/piperstrangeart">
-            <i className="fab fa-twitter"></i>
-          </a>
-        </li>
+        {socialsArr.map((item) => {
+          if (item.icon) {
+            return (
+              <li>
+                <a href={item.link}>
+                  <i className={item.icon}></i>
+                </a>
+              </li>
+            );
+          } else {
+            return <></>;
+          }
+        })}
       </ul>
     </div>
   );

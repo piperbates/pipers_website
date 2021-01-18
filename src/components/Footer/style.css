@@ -1,4 +1,4 @@
-#home-h1 {
+/* #home-h1 {
     font-size: 7vw;
     text-align: center;
 }
@@ -27,4 +27,26 @@
         font-size: 18vw;
         text-align: center;
     } 
+} */
+
+footer {
+    text-align: center;
+    color: grey;
+    font-size: small;
 }
+footer a {
+    color: grey;
+    
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+
+footer li {
+    padding: 3px;
+} 

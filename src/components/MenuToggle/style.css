@@ -4,7 +4,9 @@
     display: none;
   }
 }
-
+#navigation-bar {
+  width: 10px;
+}
 @media screen and (max-width: 700px) {
 nav {
   display: flex;
@@ -12,9 +14,10 @@ nav {
 }
 
 #menu-toggle-image {
-  width: 20%;
+  width: 100px; height: 100px;
   position: absolute;
   right: 0px;
+
 
 }
 

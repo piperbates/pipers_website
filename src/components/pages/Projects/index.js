@@ -1,7 +1,8 @@
 import React from "react";
 import "./style.css";
 import "../../../gallery.css";
-import projectArr from "./project-arr";
+import projectArr from "../../../data/projects";
+
 
 import ProjectBox from "./ProjectBox";
 export default function Projects() {
@@ -12,11 +13,9 @@ export default function Projects() {
       </a>
 
       <div id="project-container" className="box">
+          <h2>Coding Projects</h2>
         <div id="project-box">
-          <h1 id="project-h1">Coding Projects</h1>
-          <p>
-            Coding bla bla bla
-          </p>
+         
           <div id="project-gallery" className="misc-gallery">
             {projectArr.map((a) => {
               return <ProjectBox

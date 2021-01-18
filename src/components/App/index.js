@@ -14,6 +14,7 @@ function App() {
   
     <MenuToggle />
     <main>
+    <div id="main-container">
     {/* main encompasses the "page" components */}
       <Home />
       <About />
@@ -21,8 +22,9 @@ function App() {
       <Art />
       <Contact />
       <Socials/>
-      <Footer />
+      </div>
     </main>
+      <Footer />
   </div>
   );
 }

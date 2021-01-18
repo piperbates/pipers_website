@@ -1,9 +1,23 @@
-#project-box {
-    width: 100%;
+
+#contact-box {
+margin-bottom: 0px; padding-bottom: 0px;
 }
 
-#project-h1 {
-    font-size: 7vw;
-    text-align: center;
+form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 10px auto;
 }
 
+input, .textarea {
+  padding: 7px;
+  margin: 5px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.textarea {
+  height: 100px;
+}
