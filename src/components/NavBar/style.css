@@ -10,6 +10,9 @@ nav a:hover {
   padding-right: 3px;
 }
 
+
+
+
 @media screen and (min-width: 701px) {
   nav {
     padding: 10px;
@@ -50,12 +53,11 @@ nav a:hover {
   }
 
   #nav-socials {
-      display: none;
+    display: none;
   }
 }
 
 @media screen and (max-width: 700px) {
-    
   #navigation-bar {
     width: 100%;
     display: flex;

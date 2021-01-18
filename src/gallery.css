@@ -11,9 +11,7 @@
 
 }
 
-.misc-gallery img {
-    border-radius: 100px;
-}
+
 @media screen and (min-width: 701px){
 .misc-gallery img {
     height: 200px;

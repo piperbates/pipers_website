@@ -11,6 +11,8 @@
     color: var(--light-blue);
 }
 
+
+
 @media screen and (min-width: 701px) {
 #socials {
     position: fixed;

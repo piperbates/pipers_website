@@ -23,7 +23,7 @@ html {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--header-font)
+  font-family: var(--header-font);
 }
 
 body {
@@ -33,16 +33,31 @@ body {
 a {
   text-decoration: none;
   border-width: 0px;
+  color: black;
 }
 
-a:active {
-  text-decoration: none;
-  border-width: 0px;
+img {
+  width: 100px;
+  height: 100px;
+    border-radius: 100px;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 p {
   text-align: center;
   font-family: var(--regular-font);
+}
+
+h2 {
+  font-size: 5vw;
+  text-align: center;
+
+}
+h3 {
+  font-size: 2vw;
 }
 /* html, body
 {
