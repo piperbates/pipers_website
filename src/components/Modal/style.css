@@ -1,0 +1,58 @@
+.modal-visable {
+    visibility: visible; 
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity 300ms;
+    height: auto;
+}
+
+
+.modal-not-visable {
+    visibility: hidden; 
+    opacity: 0;
+    transition: visibility 0s linear 300ms, opacity 300ms;
+    height: 0px;
+}
+
+#modal {
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    position: fixed;
+    top: 100px;
+    margin: auto;
+    background-color: white;
+    z-index: 1;
+}
+
+.modal-button {
+    background-color: inherit;
+    border: 0px;
+    float: right;
+    padding: 3px;
+}
+
+.modal-button:hover {
+    cursor: pointer;
+}
+
+
+
+#modal img {
+    border-radius: 0px;
+    width: 30%; height: auto;
+    margin: auto;
+}
+
+#modal-content {
+    display: flex;
+}
+
+#modal a {
+    text-decoration: underline;
+}
+
+#modal a:hover {
+    color: gray;
+}
+

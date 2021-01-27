@@ -8,6 +8,10 @@
     height: 200px;
 }
 
+#art-container img:hover{
+    cursor: pointer;
+}
+
 #art-container a {
     text-decoration: underline;
 }

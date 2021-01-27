@@ -27,6 +27,10 @@
     margin: 10px;
 }
 
+.smol-project-box img:hover {
+    cursor: pointer;
+}
+
 
 .smol-project-box a {
     color: var(--med-blue);

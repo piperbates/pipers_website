@@ -1,24 +1,57 @@
-import React from "react";
+import React, {useState} from "react";
 import "./style.css";
-import "../../../gallery.css"
-import galleryArr from "./gallery-arr";
-
-import GalleryItem from "./GalleryItem";
+import "../../../gallery.css";
+import galleryArr from "../../../data/gallery-arr";
+import Modal from "../../Modal"
 
 export default function Art() {
+  const [modalView, setModalView] = useState(false);
+  const [modalInfo, setModalInfo] = useState({});
+
+  function handleClick(title, img, desc) {
+    setModalView(!modalView);
+    setModalInfo({ title, img, desc });
+  }
+
+  function closeModal() {
+    if (modalView) {
+      setModalView(false);
+    } else {
+      return;
+    }
+  }
   return (
+    
+    
     <div className="anchor-box">
       <a name="art" href="/#">
         &nbsp;
       </a>
 
       <div id="art-container" className="box">
+      <Modal visability={modalView} info={modalInfo} setState={closeModal} />
+
         <div id="art-box">
           <h2>Art and Illustration</h2>
-          <p>I've always loved to draw, and spent 5 years as a freelance illustrator creating children's books, branding illustration, portraits and more. Here's some of my favourite pieces I've worked on! If you want to see more of my illustration work, you can find my illustration portfolio here: <a href="http://www.piperstrange.com">PiperStrange.com</a></p>
+          <p>
+            I've always loved to draw, and spent 5 years as a freelance
+            illustrator creating children's books, branding illustration,
+            portraits and more. Here's some of my favourite pieces I've worked
+            on! If you want to see more of my illustration work, you can find my
+            illustration portfolio here:{" "}
+            <a href="http://www.piperstrange.com">PiperStrange.com</a>
+          </p>
+
           <div id="gallery" className="misc-gallery">
+
             {galleryArr.map((a) => {
-              return <GalleryItem img={a} />;
+              return (
+                <div className="gallery-item">
+                  <img src={a.src} alt={a.alt} onClick={()=>{
+                    handleClick(a.title, a.src, a.desc)
+                  }}/>
+                </div>
+              );
             })}
           </div>
         </div>
