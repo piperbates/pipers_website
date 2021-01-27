@@ -7,3 +7,10 @@
     width: 200px;
     height: 200px;
 }
+
+#art-container a {
+    text-decoration: underline;
+}
+#art-container a:hover{
+    color: gray;
+}
