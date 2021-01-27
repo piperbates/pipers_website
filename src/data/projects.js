@@ -18,7 +18,7 @@ export let projectArr = [
     src: patricksBookcase,
     desc: "A personalised app to organise a users book collection. Started building in Nov 2020.",
     link: "https://github.com/piperbates/patricks-bookcase-front-end",
-    liveLink: "",
+    liveLink: "https://patricks-bookcase.netlify.app",
   },
   {
     title: "MentorMatch",
