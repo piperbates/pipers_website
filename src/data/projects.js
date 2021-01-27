@@ -3,8 +3,16 @@ import pkmcard from "../project-img/pkmcard.png"
 import rps from "../project-img/rps.png";
 import patricksBookcase from "../project-img/patricks-bookcase.png";
 import sassyElephants from "../project-img/sassy-elephants.png"
+import recap from "../project-img/recap.png"
 
 export let projectArr = [
+  // {
+  //   title: "re:cap",
+  //   src: recap,
+  //   desc: "Created for our ",
+  //   link: "https://github.com/piperbates/patricks-bookcase-front-end",
+  //   liveLink: "",
+  // },
   {
     title: "Patricks Bookcase",
     src: patricksBookcase,
