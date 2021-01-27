@@ -6,13 +6,13 @@ import sassyElephants from "../project-img/sassy-elephants.png"
 import recap from "../project-img/recap.png"
 
 export let projectArr = [
-  // {
-  //   title: "re:cap",
-  //   src: recap,
-  //   desc: "Created for our ",
-  //   link: "https://github.com/piperbates/patricks-bookcase-front-end",
-  //   liveLink: "",
-  // },
+  {
+    title: "re:cap",
+    src: recap,
+    desc: "Created for School of Codes final project, we were given the brief 'How can School of Code better deliver lecture resources to its bootcampers?' Armed with nothing more than this sentence, my 6-person-team worked for 4 weeks to develop a media sharing platform we dubbed re:cap.",
+    link: "https://github.com/piperbates/front-end-final-project-code-goblins",
+    liveLink: "",
+  },
   {
     title: "Patricks Bookcase",
     src: patricksBookcase,
