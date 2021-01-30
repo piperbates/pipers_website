@@ -6,11 +6,11 @@ import Modal from "../../Modal";
 
 export default function Projects() {
   const [modalView, setModalView] = useState(false);
-  const [modalInfo, setModalInfo] = useState({});
+  const [modalInfo, setModalInfo] = useState({title: "", img: "", gif: "", desc:"", github:"", livelink: "", techStack: []});
 
-  function handleClick(title, img, gif, desc, github, livelink) {
+  function handleClick(title, img, gif, desc, github, livelink, techStack) {
     setModalView(!modalView);
-    setModalInfo({ title, img, gif, desc, github, livelink });
+    setModalInfo({ title, img, gif, desc, github, livelink, techStack });
   }
 
   function closeModal() {
@@ -49,7 +49,8 @@ export default function Projects() {
                         a.gif,
                         a.desc,
                         a.link,
-                        a.liveLink
+                        a.liveLink ? a.liveLink : "",
+                        a.techStack
                       );
                     }}
                   />

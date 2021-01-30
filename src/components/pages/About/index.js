@@ -32,10 +32,7 @@ export default function About() {
             text={about.future.futureText}
           /></div>
 
-          {/* <StoryBox storyId="about-during-box" text="During"/>
-          <StoryBox storyId="about-future-box" text="After"/> */}
-
-          {/*  */}
+         
         </div>
       </div>
     </div>
