@@ -1,5 +1,7 @@
 import React from "react";
 import "./style.css";
+import techStackIcons from "../../data/projects"
+
 
 export default function Modal({ visability, info, setState }) {
   function findE(e) {
@@ -7,6 +9,12 @@ export default function Modal({ visability, info, setState }) {
     if (e.target.id === "project-gallery" || e.target.id === "root") {
       setState();
     }
+  }
+
+  if (info.techStack) {
+    info.techStack.map((a) => {
+      console.log(a);
+    });
   }
 
   document.addEventListener("click", findE);
@@ -21,12 +29,30 @@ export default function Modal({ visability, info, setState }) {
         X
       </button>
       <h1>{info.title}</h1>
-
+    
       <div id="modal-content">
-        {info.gif ? <img src={info.gif} /> : <img src={info.img} style={info.desc ? {} : {width: "400px", height: "auto"}} />}
+        {info.gif ? (
+          <img src={info.gif} />
+        ) : (
+          <img
+            src={info.img}
+            style={info.desc ? {} : { width: "400px", height: "auto" }}
+          />
+        )}
 
-        <p>{info.desc}</p>
-      </div>
+        <div id="modal-sidebar">
+          <p>{info.desc}</p>
+
+          <ul id="tech-stack">
+            {info.techStack ? (
+              info.techStack.map((a) => {
+                return <li class="tech-icons"><i className={a}></i></li>;
+              })
+            ) : (
+              <></>
+            )}
+          </ul>
+          </div>
 
       <div id="modal-footer">
         {info.github ? (
@@ -48,7 +74,9 @@ export default function Modal({ visability, info, setState }) {
         ) : (
           <></>
         )}
+        </div>
       </div>
+
     </div>
   );
 }
