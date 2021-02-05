@@ -1,28 +1,35 @@
-
-
 /* Variables */
 :root {
   /* Colour Scheme */
-  --main-bg-color: #F0F4EF;
-  --green: #A9EFAF;;
-  --light-blue: #B4CDED;
+  --main-bg-color: #f0f4ef;
+  --green: #a9efaf;
+  --light-blue: #b4cded;
   --med-blue: #344966;
-  --main-text-color: #0D1821;
+  --main-text-color: #0d1821;
   /* Fonts */
 
   --header-font: "pipers_handwritingregular";
   --regular-font: Arial, Helvetica, sans-serif;
 }
-html {
-  scroll-behavior: smooth;
+
+@media only screen and (min-width: 600px) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 * {
-  margin: 0; padding: 0px;
+  margin: 0;
+  padding: 0px;
   font-family: var(--regular-font);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--header-font);
 }
 
@@ -39,7 +46,7 @@ a {
 img {
   width: 100px;
   height: 100px;
-    border-radius: 100px;
+  border-radius: 100px;
 }
 
 a:hover {
@@ -51,13 +58,30 @@ p {
   font-family: var(--regular-font);
 }
 
+h1 {
+  font-size: 7vw;
+}
+
 h2 {
   font-size: 5vw;
   text-align: center;
-
 }
 h3 {
   font-size: 2vw;
+}
+
+@media screen and (max-width: 700px) {
+
+  h1 {
+    font-size: 14vw;
+  }
+
+  h2 {
+    font-size: 12vw;
+  }
+  h3 {
+    font-size: 10vw;
+  }
 }
 /* html, body
 {
