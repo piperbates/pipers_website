@@ -9,7 +9,7 @@ export default function Home() {
    
         <div id="home-box">
 
-        <h1 id="home-h1">Hi, I'm Piper, and I'm a never ending work in progress.</h1>
+        <h1 id="home-h1">Hi, I'm Piper, and I have a thirst for knowledge.</h1>
         </div>
       </div>)
 }

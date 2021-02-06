@@ -27,7 +27,7 @@ export let projectArr = [
   {
     title: "re:cap",
     src: recap,
-    desc: "Created for School of Codes final project, we were given the brief 'How can School of Code better deliver lecture resources to its bootcampers?' Armed with nothing more than this sentence, my 6-person-team worked for 4 weeks to develop a media sharing platform we dubbed re:cap.",
+    desc: "Created for School of Codes final project, we were given the brief 'How can School of Code better deliver lecture resources to its bootcampers?' Armed with nothing more than this sentence, my 6-person-team worked for 4 weeks to develop a media sharing platform we dubbed re:cap. We worked using Agile methodologies throughout,  in particular the Scrum-Ban method, frequently reporting back to our client for feedback and testing.",
     link: "https://github.com/piperbates/front-end-final-project-code-goblins",
     // liveLink: "",
     techStack: [tsi.react, tsi.javaScript, tsi.nodeJs, tsi.css, tsi.vimeoApi]
@@ -35,7 +35,7 @@ export let projectArr = [
   {
     title: "Patricks Bookcase",
     src: patricksBookcase,
-    desc: "A personalised app to organise a users book collection. Started building in Nov 2020.",
+    desc: "A personalised app to organise a users book collection. Created as a personal project during the School of Code as a way to help my partner organise his extensive yet unorganised library, I have plans to turn this into a much larger scale app with multiple users who have multiple bookcases. Started building in Nov 2020.",
     link: "https://github.com/piperbates/patricks-bookcase-front-end",
     liveLink: "https://patricks-bookcase.netlify.app",
     techStack: [tsi.react, tsi.javaScript, tsi.nodeJs, tsi.css]
@@ -44,7 +44,7 @@ export let projectArr = [
     title: "MentorMatch",
     src: sassyElephants,
     desc:
-      "A project created in a week long hackathon during School of Code, in a team of 5. Designed to better match School of Code mentors with students. Created in November.",
+      "A project created in a week long hackathon during School of Code, in a team of 5. Designed to better match School of Code mentors with students, as the previous matching system is randomised. We wanted to create a more personal experience, matching people based on personality, job interests / experience, and hobbies. Created in November 2020.",
     link: "https://github.com/piperbates/front-end-project-week-thesassyelephants",
     liveLink: "",
     techStack: [tsi.react, tsi.javaScript, tsi.nodeJs, tsi.css]
@@ -54,7 +54,7 @@ export let projectArr = [
     title: "Art Every Hour",
     src: arteveryhour,
     desc:
-      "My first Twitter bot. Uses the Twitter API to search for recent hashtags containing #art, and retweets the most recent, once an hour. Deployed on heroku.",
+      "My first Twitter bot. Uses the Twitter API to search for recent hashtags containing #art, and retweets the most recent, once an hour. Deployed on heroku. Created in January 2021 as a side project to better understand Node.js after the School of Code.",
     link: "https://github.com/piperbates/ArtEveryHourBot",
     liveLink: "https://twitter.com/ArtEveryHour",
     techStack: [tsi.javaScript, tsi.nodeJs, tsi.twitter]
@@ -63,7 +63,7 @@ export let projectArr = [
   {
     title: "Drawing App",
     src: drawinggame,
-    desc: "A simple drawing game made with canvas and javascript. Built in Nov 2020.",
+    desc: "A simple drawing game made with canvas and javascript. Built as a personal project in Nov 2020 during my time on the School of Code to better understand canvas and Javascript. I have plans to turn this into a collaborative drawing game using webhooks in the future.",
     link: "https://github.com/piperbates/drawing-app",
     liveLink: "https://piperbates.github.io/drawing-app/",
     techStack: [tsi.javaScript, tsi.html, tsi.css]
@@ -72,7 +72,7 @@ export let projectArr = [
   {
     title: "Pokemon Card Generator",
     src: pkmcard,
-    desc: "A random Pokemon card generator, created with PokeAPI and JS. Built in Sept 2020.",
+    desc: "A random Pokemon card generator, created with PokeAPI and JS. Built in Sept 2020 for a School of Code hackathon. My first project using an API, where I developed a real love for RESTful APIs and their potential.",
     link: "https://github.com/piperbates/pokemon-card-generator",
     liveLink: "https://piperbates.github.io/pokemon-card-generator/",
     techStack: [tsi.javaScript, tsi.html]
@@ -81,7 +81,7 @@ export let projectArr = [
     title: "Rock Paper Scissors",
     src: rps,
     desc:
-      "The classic game, made with vanilla JS. My first Javascript project. Built in Sept 2020",
+      "The classic game, made with vanilla JS. My first Javascript project, built in Sept 2020, in a two person hackathon during the School of Code.",
     link: "https://github.com/piperbates/rps",
     liveLink: "",
     techStack: [tsi.javaScript, tsi.html, tsi.css]
