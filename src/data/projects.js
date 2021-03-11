@@ -81,9 +81,9 @@ export let projectArr = [
     title: "Rock Paper Scissors",
     src: rps,
     desc:
-      "The classic game, made with vanilla JS. My first Javascript project, built in Sept 2020, in a two person hackathon during the School of Code.",
-    link: "https://github.com/piperbates/rps",
-    liveLink: "",
+      "The classic game, made with vanilla JS. My first Javascript project, built in Sept 2020 in a two person hackathon during the School of Code, then refactored on day 1 of the 100 days of code challenge on 11/03/2021.",
+    link: "https://github.com/piperbates/rock-paper-scissors-refactored",
+    liveLink: "https://piperbates.github.io/rock-paper-scissors-refactored/",
     techStack: [tsi.javaScript, tsi.html, tsi.css]
   },
 ];
