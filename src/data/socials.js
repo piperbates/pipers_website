@@ -12,7 +12,7 @@ export const socialsArr = [
   },
   {
     title: "Twitter",
-    link: "http://www.twitter.com/piperstrangeart",
+    link: "https://twitter.com/ProgrammerPiper",
     icon: "fab fa-twitter"
   },
   {
