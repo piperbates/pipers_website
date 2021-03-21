@@ -59,7 +59,7 @@ export default function Projects() {
 
             <h1>{modalInfo.title}</h1>
             <p id="modal-desc">
-              <img src={modalInfo.img} />
+              <img src={modalInfo.img}/>
               {modalInfo.desc}
             </p>
               <ul id="tech-stack">
