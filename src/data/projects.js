@@ -70,7 +70,7 @@ export let projectArr = [
   },
 
   {
-    title: "Pokemon Card Generator",
+    title: "Pokemon Generator",
     src: pkmcard,
     desc: "A random Pokemon card generator, created with PokeAPI and JS. Built in Sept 2020 for a School of Code hackathon. My first project using an API, where I developed a real love for RESTful APIs and their potential.",
     link: "https://github.com/piperbates/pokemon-card-generator",

@@ -15,6 +15,7 @@ function toggle(){
 
   return (
     <div id="navigation-bar">
+
       <input type="checkbox" id="menu-toggle" name="menu-toggle" />
       <label htmlFor="menu-toggle" onClick={toggle}>
         <img src={menuDisplay ? menutoggle : menuhide} id="menu-toggle-image" alt="toggle menu" />

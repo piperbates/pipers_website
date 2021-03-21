@@ -9,23 +9,30 @@
 }
 
 #project-container img {
-    width: 200px; height: 200px;
+    width: 125px; height: 125px;
+    padding: 10px;
 
 }
 
-.smol-project-box{
+
+#project-gallery {
     display: flex;
-    width: 200px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.smol-project-box {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 10px;
-
 }
 
-.smol-project-box img {
-    margin: 10px;
+.smol-project-box h3 {
+    font-size: 20px;
 }
+
 
 .smol-project-box img:hover {
     cursor: pointer;
@@ -42,10 +49,70 @@
 
 @media screen and (min-width: 700px){
     .smol-project-box {
-    margin-left: 80px;
 
     }
 }
 
 /* --light-blue: #B4CDED;
   --med-blue: #344966; */
+
+  #modal {
+      width: 30%;
+      margin: auto;
+      height: auto;
+  }
+
+  
+
+  #modal h1 {
+      font-size: 2em;
+  }
+
+  #modal ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  }
+
+
+  #modal-desc {
+display: flex; 
+margin: 5px;
+  }
+
+
+  #modal i {
+font-size: 3em;  }
+
+#modal a {
+    color: black;
+    text-decoration: underline;
+}
+
+#modal-links {
+    margin-top: 20px;
+}
+#modal a:hover {
+    color: gray;
+}
+
+
+  .close-modal-button {
+      float: right;
+      font-size: x-large;
+  }
+
+  
+  @media screen and (max-width: 701px) {
+      #modal {
+          width: 80%;
+          padding: 0x;
+          margin: 0px;
+          text-align: center;
+      }
+    #modal-desc {
+    flex-direction: column;
+    text-align: center;
+
+}
+  }

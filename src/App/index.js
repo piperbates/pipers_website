@@ -17,9 +17,9 @@ function App() {
     <div id="main-container">
     {/* main encompasses the "page" components */}
       <Home />
-      <About />
       <Projects />
       <Art />
+      <About />
       <Contact />
       <Socials/>
       </div>

@@ -1,11 +1,12 @@
 #art-container {
-    width: 80%;
     margin: auto;
+    text-align: center;
+
 }
 
 #art-container img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
 }
 
 #art-container img:hover{
@@ -17,4 +18,9 @@
 }
 #art-container a:hover{
     color: gray;
+}
+
+.art-modal img {
+        width: 100%;
+        height: auto;
 }

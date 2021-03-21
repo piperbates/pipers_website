@@ -1,38 +1,21 @@
 
-
-.storybox {
-  margin: 20px 10px;
-}
-
-#about-wrapper {
-  display: flex;
-  flex-direction: row;
-  flex: auto;
-  
+#about-info {
+  width: 50%;
 }
 
 #about-container {
-    flex: auto;
-  display: block;
-  /* background: url("../../../images/about-scribble.png") no-repeat; */
-  /* background-size: 100px, 100px;
-  background-position: bottom right; */
-}
-
-.highlighted-box {
-  background-color: var(--light-blue);
-  padding: 30px;
-  border-radius: 10px;
-  margin: 20px;
-  color: black;
-  font-size: 1.3em;
   text-align: center;
 }
 
-@media screen and (max-width: 700px) {
-  #about-wrapper {
-    flex-direction: column;
-    align-items: center;
-  }
+#about-container p {
+  text-align: justify;
+  margin-bottom: 40px;
+
 }
+
+#about-container img {
+  width: 100px;
+  margin: auto;
+}
+
 
