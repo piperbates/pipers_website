@@ -54,7 +54,7 @@ export let projectArr = [
     title: "Art Every Hour",
     src: arteveryhour,
     desc:
-      "My first Twitter bot. Uses the Twitter API to search for recent hashtags containing #art, and retweets the most recent, once an hour. Deployed on heroku. Created in January 2021 as a side project to better understand Node.js after the School of Code.",
+      "My first Twitter bot. Created to help Twitter users find more artists across the platform without having to search constantly. Uses the Twitter API to search for recent hashtags containing #art, and retweets the most recent, once an hour. Deployed on heroku. Created in January 2021 as a side project to better understand Node.js after the School of Code.",
     link: "https://github.com/piperbates/ArtEveryHourBot",
     liveLink: "https://twitter.com/ArtEveryHour",
     techStack: [tsi.javaScript, tsi.nodeJs, tsi.twitter]
