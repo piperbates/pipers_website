@@ -29,7 +29,7 @@ export let projectArr = [
     src: recap,
     desc: "Created for School of Codes final project, we were given the brief 'How can School of Code better deliver lecture resources to its bootcampers?' Armed with nothing more than this sentence, my 6-person-team worked for 4 weeks to develop a media sharing platform we dubbed re:cap. We worked using Agile methodologies throughout,  in particular the Scrum-Ban method, frequently reporting back to our client for feedback and testing.",
     link: "https://github.com/piperbates/front-end-final-project-code-goblins",
-    // liveLink: "",
+    liveLink: "https://www.youtube.com/watch?v=yQWYeDRapBc",
     techStack: [tsi.react, tsi.javaScript, tsi.nodeJs, tsi.css, tsi.vimeoApi]
   },
   {
