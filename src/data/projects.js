@@ -2,9 +2,10 @@ import drawinggame from "../project-img/drawinggame.png";
 import pkmcard from "../project-img/pkmcard.png"
 import rps from "../project-img/rps.png";
 import patricksBookcase from "../project-img/patricks-bookcase.png";
-import sassyElephants from "../project-img/sassy-elephants.png"
-import recap from "../project-img/recap.png"
-import arteveryhour from "../project-img/arteveryhour.png"
+import sassyElephants from "../project-img/sassy-elephants.png";
+import recap from "../project-img/recap.png";
+import arteveryhour from "../project-img/arteveryhour.png";
+import purely from "../project-img/purely.png";
 
 
 const tsiSize = "fa-5x"
@@ -24,6 +25,14 @@ function iconMaker(name){
 }
 
 export let projectArr = [
+  {
+    title: "We Love Purely",
+    src: purely,
+    desc: "We Love Purely relaunched their website using Shopify and wanted a team of people to develop their site. I was personally responsible for managing the site DNS to help with a successful launch, I learnt Liquid on the job and used it alongside my team mates to create cusom sections, templates, and applications in order to deliver a fantastic web presence for Purely. We also developed a Standard Operating Procedure for the Purely team so they were able to fully manage and customise their website without touching code after our involvement.",
+    link: "",
+    liveLink: "https://welovepurely.com/",
+    techStack: [tsi.html, tsi.css]
+  },
   {
     title: "re:cap",
     src: recap,
