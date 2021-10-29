@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "./style.css";
+import "../../../gallery.css";
+
 import "../../../box-style.css";
 
-import "../../../gallery.css";
 import galleryArr from "../../../data/gallery-arr";
 import ReactModal from "react-modal";
 
@@ -24,9 +25,9 @@ export default function Art() {
   }
   return (
     <div className="anchor-box">
-      <a name="art" href="/#">
-        &nbsp;
-      </a>
+    <a name="art" href="/#">
+     &nbsp;
+   </a>
 
       <div id="art-container" className="box">
         <h2>Art and Illustration</h2>
@@ -48,7 +49,6 @@ export default function Art() {
             onRequestClose={closeModal} >
               <img src={modalInfo.img}/>
             </ReactModal>
-
 
               {galleryArr.map((a) => {
                 return (
