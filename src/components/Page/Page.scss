@@ -1,0 +1,37 @@
+@import '../../styles/variables.scss';
+
+.page {
+    width: 60%;
+    margin: auto;
+    padding-top: 50px;
+    min-height: 90vh;
+    text-align: center;
+}
+
+.page-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-header img {
+    width: 200px;
+    height: 200px;
+}
+
+.page-content {
+    margin: 0 100px 100px;
+    color: $pipers-beige-100;
+}
+
+.seperator {
+    width: 100%;
+    border: 1px solid $pipers-pink-25;
+}
+
+/* Media Query Widths */
+@media screen and (max-width: $mq-md) {
+    .page {
+        width: 100%;
+    }
+}

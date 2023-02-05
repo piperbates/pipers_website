@@ -1,0 +1,109 @@
+@import './styles/variables.scss';
+
+body {
+  background-color: $pipers-navy-100;
+  font-family: $main-font;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+// Headers
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $pipers-beige-100;
+}
+
+h1 {
+  font-size: $biggest-font;
+  padding: 0px;
+  margin: 0px;
+}
+
+h2 {
+  font-size: 9em;
+  padding: 0px;
+  margin: 0px;
+}
+
+h3 {
+  font-size: 5em;
+  padding: 0px;
+  margin: 0px;
+}
+
+h4 {
+  font-size: 4em;
+  padding: 0px;
+  margin: 0px;
+}
+
+h5 {
+  font-size: 3em;
+  padding: 0px;
+  margin: 0px;
+}
+
+h6 {
+  font-size: 2em;
+  padding: 0px;
+  margin: 0px;
+}
+
+// Anchor links
+a {
+  color: $pipers-blue-50;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a:hover {
+  color: $pipers-blue-25;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+p {
+  font-size: 1.5em;
+  line-height: 2em;
+  word-spacing: .2em;
+}
+
+// @media screen and (min-width: $mq-xxs) and (max-width: $mq-xs) {
+//   .page {
+//   }
+// }
+
+// @media screen and (min-width: $mq-xs) and (max-width: $mq-sm) {
+//   .page {
+//   }
+// }
+
+// @media screen and (min-width: $mq-sm) and (max-width: $mq-md) {
+//   .page {
+//   }
+// }
+
+// @media screen and (min-width: $mq-md) and (max-width: $mq-lg) {
+//   .page {
+//   }
+// }
+
+// @media screen and (min-width: $mq-lg) and (max-width: $mq-xl) {
+//   .page {
+//   }
+// }
+
+// @media screen and (min-width: $mq-xl) {
+//   .page {
+//   }
+// }

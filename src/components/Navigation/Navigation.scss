@@ -1,0 +1,27 @@
+@import '../../styles/variables.scss';
+
+nav {
+    padding: 5px;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 25px;
+}
+
+nav i {
+    margin-right: 5px;
+}
+
+nav a {
+    color: $pipers-beige-100;
+    font-size: $navigation-font-size;
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
