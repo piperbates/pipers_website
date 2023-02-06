@@ -1,7 +1,8 @@
-import React, { useContext, useEffect, useRef } from 'react';
+import React, { useContext, useRef } from 'react';
 import { ModalContext } from './ModalContext';
 
 import './Modal.scss';
+import useOnClickOutside from '../../hooks/useOnClickOutside';
 
 interface ModalProps {
 
@@ -26,6 +27,8 @@ export const Modal = (props: ModalProps) => {
         else {
             setModalOpen(true)}
         }
+
+        useOnClickOutside(modalRef, () => setModalOpen(false))
 
         return (
         <div className="modal">
