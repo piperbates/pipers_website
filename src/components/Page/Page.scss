@@ -1,16 +1,14 @@
 @import '../../styles/variables.scss';
 
 .page {
-    width: 60%;
-    margin: auto;
+    width: 100%;
     padding-top: 50px;
     min-height: 90vh;
     text-align: center;
 }
 
 .page-header {
-    display: flex;
-    justify-content: center;
+    display: inline-flex;
     align-items: center;
 }
 
@@ -20,11 +18,13 @@
 }
 
 .page-content {
-    margin: 0 100px 100px;
+    margin: auto;
+    width: 50%;
     color: $pipers-beige-100;
 }
 
 .seperator {
+    margin: 100px 0px;
     width: 100%;
     border: 1px solid $pipers-pink-25;
 }
@@ -32,6 +32,25 @@
 /* Media Query Widths */
 @media screen and (max-width: $mq-md) {
     .page {
+        display: block;
         width: 100%;
+        min-height: unset;
+    }
+
+    .page-header h1 {
+        font-size: 2.5em;
+    }
+
+    .page-header img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .page-content {
+        width: 100%;
+    }
+
+    .seperator {
+        margin: 10px 0;
     }
 }
