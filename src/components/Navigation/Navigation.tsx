@@ -10,10 +10,13 @@ export const Navigation = () => {
 
     const navRef = useRef<HTMLLIElement>(null);
 
-    // useOnClickOutside(navRef, ()=> {setNavOpen(false)})
+    useOnClickOutside(navRef, ()=> {setNavOpen(false)})
     
+    const handleLinkClick = () => {
+        setNavOpen(false)
+    }
 
-   return <nav>
+   return <nav ref={navRef}>
         
         <button onClick={()=>{
                 setNavOpen(!navOpen);
@@ -23,26 +26,26 @@ export const Navigation = () => {
         <div className={navOpen ? 'nav__menu-open' : 'nav__menu-closed'}>
         <ul>
             <Route path="/">
-                <li ref={navRef}>
-                    <a href={`#${PageValues.TOP}`}>
+                <li>
+                    <a href={`#${PageValues.TOP}`} onClick={()=>handleLinkClick()}>
                         <i className="fas fa-home icon"/>
                         Home
                     </a>
                 </li>
-                <li ref={navRef}>
-                    <a href={`#${PageValues.PROJECTS}`}>
+                <li>
+                    <a href={`#${PageValues.PROJECTS}`} onClick={()=>handleLinkClick()}>
                         <i className="fas fa-code icon"/>
                         {PageTitles.PROJECTS}
                     </a>
                 </li>
-                <li ref={navRef}>
-                    <a href={`#${PageValues.ABOUT}`}>
+                <li>
+                    <a href={`#${PageValues.ABOUT}`} onClick={()=>handleLinkClick()}>
                         <i className="fas fa-grin-beam icon"/>
                         {PageTitles.ABOUT}
                     </a>
                 </li>
-                <li ref={navRef}>
-                    <a href={`#${PageValues.CREATIVE}`}>
+                <li>
+                    <a href={`#${PageValues.CREATIVE}`} onClick={()=>handleLinkClick()}>
                         <i className="fas fa-paint-brush icon"/>
                         {PageTitles.CREATIVE}
                     </a>
