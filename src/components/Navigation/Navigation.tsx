@@ -8,7 +8,7 @@ import './Navigation.scss'
 export const Navigation = () => {
     const [navOpen, setNavOpen] = useState(false);
 
-    const navRef = useRef<HTMLLIElement>(null);
+    const navRef = useRef<HTMLDivElement>(null);
 
     useOnClickOutside(navRef, ()=> {setNavOpen(false)})
     

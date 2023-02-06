@@ -1,15 +1,16 @@
-import { useEffect } from 'react';
+import { BaseSyntheticEvent, useEffect } from 'react';
 
 
-export default function useOnClickOutside(ref: any, handler: any) {
+export default function useOnClickOutside(
+  ref: React.RefObject<HTMLDivElement> | React.RefObject<HTMLLIElement>, 
+  handler: any) {//TODO: Part of the modal typesafing task
   useEffect(
     () => {
-      const listener = (event: MouseEvent | TouchEvent) => {
+      const listener = (event: BaseSyntheticEvent | TouchEvent | MouseEvent) => {
         // Do nothing if clicking ref's element or descendent elements
         if (!ref.current || ref.current.contains(event.target)) {
           return;
         }
-        console.log(typeof(ref))
         handler(event);
       };
       document.addEventListener("mousedown", listener);
