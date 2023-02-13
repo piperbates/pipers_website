@@ -2,7 +2,9 @@ import { BaseSyntheticEvent, useEffect } from 'react';
 
 
 export default function useOnClickOutside(
-  ref: React.RefObject<HTMLDivElement> | React.RefObject<HTMLLIElement>, 
+  ref: 
+  React.RefObject<HTMLDivElement>,
+  // | React.RefObject<HTMLLIElement>, 
   handler: any) {//TODO: Part of the modal typesafing task
   useEffect(
     () => {
@@ -13,6 +15,7 @@ export default function useOnClickOutside(
         }
         handler(event);
       };
+      
       document.addEventListener("mousedown", listener);
       document.addEventListener("touchstart", listener);
       return () => {

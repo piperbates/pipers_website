@@ -14,8 +14,8 @@ import { Footer } from './components/Footer/Footer';
 import { PageValues } from './PageValues';
 import { headerImages } from './images/pageIdentifiers/'
 import { FloatingLinks } from './components/FloatingLinks/FloatingLinks';
-import { Modal } from './components/Modal/Modal';
-import { cvData } from './pages/OnlineCV/cv-data';
+// import { cvData } from './pages/OnlineCV/cv-data';
+import { GalleryModal } from './components/GalleryModal/GalleryModal';
 
 function App() {  
 
@@ -45,7 +45,7 @@ function App() {
             setModalContent
           }}
           >
-            <Modal />
+            <GalleryModal />
         </ModalContext.Provider>
         }
 
