@@ -1,62 +1,67 @@
-import react from '../images/techStackImages/react.png'
-import typescript from '../images/techStackImages/typescript.png'
-import redux from '../images/techStackImages/redux.png'
+import { techStackImages } from "../images/techStackImages";
+
+const { react, typescript, redux, html, css, javascript, shopify, node, twitter, vimeo, reactAdmin, mongo, aws, antDesign } = techStackImages
+
+export type TechStackType = {
+    name: string,
+    logo: string
+}
 
 export const techStack = {
     react: {
         name: 'React',
-        logo: react,
+        logo: react.logo,
     },
     typescript: {
         name: 'Typescript',
-        logo: typescript,
+        logo: typescript.logo,
     },
     redux: {
         name: 'Redux',
-        logo: redux
+        logo: redux.logo
     },
     mongoDB: {
         name: 'Mongo DB',
-        logo: 'mongo'
+        logo: mongo.logo
     },
     aws: {
         name: 'AWS',
-        logo: 'aws'
+        logo: aws.logo
     },
     reactAdmin: {
         name: 'React Admin',
-        logo: 'reactAdmin'
+        logo: reactAdmin.logo
     },
     shopify: {
         name: 'Shopify',
-        logo: 'replace me'
+        logo: shopify.logo
     },
     html: {
         name: 'HTML',
-        logo: 'replace me'
+        logo: html.logo
     },
     css: {
         name: 'CSS',
-        logo: 'replace me'
+        logo: css.logo
     },
     javascript: {
         name: 'JavaScript',
-        logo: 'replace me'
+        logo: javascript.logo
     },
     node: {
         name: 'Node.JS',
-        logo: 'replace me'
+        logo: node.logo
     },
     vimeo: {
         name: 'VimeoAPI',
-        logo: 'replace me'
+        logo: vimeo.logo
     },
     twitter: {
         name: 'Twitter API',
-        logo: 'replace me'
+        logo: twitter.logo
     },
     antDesign: {
         name: 'Ant Design',
-        logo: 'ant design'
+        logo: antDesign.logo
     }
 }

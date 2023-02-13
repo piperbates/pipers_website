@@ -16,7 +16,7 @@ export const Navigation = () => {
         setNavOpen(false)
     }
 
-   return <nav ref={navRef}>
+   return (<nav ref={navRef}>
         
         <button onClick={()=>{
                 setNavOpen(!navOpen);
@@ -68,5 +68,5 @@ export const Navigation = () => {
             </Route>
         </ul>
         </div>
-    </nav>
+    </nav>)
 }
