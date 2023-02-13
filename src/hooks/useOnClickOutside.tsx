@@ -13,7 +13,6 @@ export default function useOnClickOutside(
         if (!ref.current || ref.current.contains(event.target)) {
           return;
         }
-        console.log(ref)
         handler(event);
       };
       
