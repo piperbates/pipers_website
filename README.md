@@ -4,4 +4,8 @@ It'd been 2 years since I made this website and it was time for an upgrade. I've
 
 Now I think I need to update some of those projects on the coding projects page because, err, yeah, they're also a little out dated and not examples of my best work!!
 
-I'm also planning on putting an Online CV (with downloadable PDF version!) into the page but that's going to involve a bit of structuring before it works and I wanted to get some kind of update on it before I did that (some of the basics of it are already are in the codebase though).
+I'm also planning on putting an Online CV (with downloadable PDF version!) into the page but that's going to involve a bit of structuring before it works and I wanted to get some kind of update out before I did that (some of the basics of it are already are in the codebase though).
+
+## A few todos...
+* The custom hook `useOnOutsideClick` has some `any` typing
+* There's a bug with the `useOnOutsideClick` that means it only functions for the navigation and not all the modal functionality
