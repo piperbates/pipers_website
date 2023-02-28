@@ -1,4 +1,4 @@
-import Layout from "@/components/Layout/Layout";
+import Layout from "@/components/Layouts/PageLayout";
 import Link from "next/link";
 
 export default function PageNotFound () {

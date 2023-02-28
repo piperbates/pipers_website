@@ -1,5 +1,5 @@
 import styles from '@/styles/Home.module.css'
-import Layout from '@/components/Layout/Layout'
+import Layout from '@/components/Layouts/PageLayout'
 import { pageIdentifierImages } from '@/utils/image-declarations/pageIdentifierImages'
 import { techStack } from '@/utils/techStack'
 import Image from 'next/image'

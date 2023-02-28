@@ -1,10 +1,10 @@
 import { BaseSyntheticEvent, useEffect } from 'react';
 
 export default function useOnClickOutside(
-  ref: 
-  React.RefObject<HTMLDivElement>,
-  // | React.RefObject<HTMLLIElement>, 
-  handler: any) {//TODO: Part of the modal type safing task
+  ref: React.RefObject<HTMLDivElement>,
+  handler: any) { //TODO: Part of the modal type safing task
+
+    
   useEffect(
     () => {
       const listener = (event: BaseSyntheticEvent | TouchEvent | MouseEvent) => {

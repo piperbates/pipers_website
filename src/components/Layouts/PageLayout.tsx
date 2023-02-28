@@ -4,6 +4,9 @@ import Link from 'next/link'
 import { routes } from '@/routes/routes'
 import { motion } from 'framer-motion'
 import FloatingSocials from '../FloatingSocials'
+import Modal from './ModalLayout'
+import { useContext, useEffect } from 'react'
+import { Modal_Data } from '@/utils/context/ModalContext'
 
 type LayoutProps = {
     children: React.ReactNode,
@@ -13,19 +16,33 @@ type LayoutProps = {
 }
 
 export default function Layout({children, pageTitle, pageHeader, pageImage}: LayoutProps) {
+    
+    const { modalOpen, modalContent } = useContext(Modal_Data)
 
     const pages = [
         routes.HOME, routes.ABOUT, routes.CODING_PROJECTS, routes.CREATIVE_PROJECTS
     ]
 
+    useEffect(()=>{
+        if(modalOpen){
+          document.body.style.overflow = 'hidden';
+        } else {
+          document.body.style.overflow = 'unset';
+    
+        }
+      }, [modalOpen])
+
 return (
 <>
+{modalOpen && <Modal />}
+
 <header className={styles.header}>
             <nav className={styles.navigation}>
                 <ul>
                         {
                             pages.map((page, i)=>
-                            <li key={i}><Link href={page.src}>{page.header}</Link></li>)
+                            <li key={i}>
+                              <Link href={page.src}>{page.header}</Link></li>)
                         }
                 </ul>
             </nav>

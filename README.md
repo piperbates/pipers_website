@@ -8,4 +8,6 @@ I'm also planning on putting an Online CV (with downloadable PDF version!) into 
 
 ## A few todos...
 * The custom hook `useOnOutsideClick` has some `any` typing
-* There's a bug with the `useOnOutsideClick` that means it only functions for the navigation and not all the modal functionality
+* Annoying basic fonts, Next JS doesn't seem to want to have the fonts work
+* Same with icons
+* Images have preset widths so the images look icky on the modal

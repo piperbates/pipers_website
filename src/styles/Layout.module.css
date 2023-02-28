@@ -1,8 +1,10 @@
 .wrapper {
-    width: 500px;
+    max-width: 500px;
+    height: 1vh;
     margin: auto;
     position: relative;
     top: 50px;
+    text-align: center;
 }
 
 .header {
@@ -44,6 +46,7 @@
     padding: 0px;
     margin: 0px;
     text-decoration: none;
+    font-weight: bold;
   }
 
   .navigation a:hover {
