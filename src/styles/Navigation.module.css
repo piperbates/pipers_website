@@ -1,0 +1,36 @@
+/*
+
+Am in the process of moving these styles into navigation component because the nav styles are getting chonkier
+.navigation {
+    margin: auto;
+    width: 500px;
+}
+
+.navigation ul {
+    display: flex;
+    list-style-type: none;
+    margin: 8px 0px;
+  }
+
+  .navigation li {
+    margin-left: 10px;
+  }
+  
+  .navigation li:not(:last-child)::after {
+    content: "|";
+    color: #fff;
+    margin-left: 10px;
+  }
+
+  .navigation a {
+    color: #fff;
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: var(--navigation-font-size);
+  }
+
+  .navigation a:hover {
+    text-decoration: underline;
+} */

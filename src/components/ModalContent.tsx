@@ -22,7 +22,7 @@ export default function ModalContent () {
         
         <h1>{modalContent?.title}</h1>
 
-        <div className={styles.modalContentImageBox}>{modalContent && <Image src={modalContent.imageSrc} alt={modalContent?.imageAlt} width={300} height={200} />}</div>
+        <div className={styles.modalContentImageBox}>{modalContent && <Image src={modalContent.imageSrc} alt={modalContent?.imageAlt} fill />}</div>
 
         <div className={styles.modalContentDescriptionBox}>{modalContent?.description}</div>
 
@@ -36,7 +36,7 @@ export default function ModalContent () {
     {modalContent?.techStack &&
         <div className={styles.techStackBox}>
             {modalContent.techStack.map((tech, i)=>{
-                return <Image key={i} src={tech.logo} alt={tech.name} width={50} height={50}/>
+                return <div className={styles.techStackImgWrapper}><Image key={i} src={tech.logo} alt={tech.name} fill /></div>
             })}
         </div>
     }

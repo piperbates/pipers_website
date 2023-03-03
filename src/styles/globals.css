@@ -43,12 +43,12 @@
 
 
 /* fonts */
---primary-font: 'Patrick Hand', cursive;
+--primary-font: 'Patrick Hand', sans-serif;
 --secondary-font: 'Arial', cursive;
 
---biggest-font: 5em;
-
---navigation-font-size: 1.5em;
+--biggest-font: 2.4em;
+--navigation-font-size: 1.3em;
+--page-font-size: 1.2em;
 
   --max-width: 1100px;
   --border-radius: 12px;
@@ -58,10 +58,13 @@
 }
 
 body {
-  font-family: var(--secondary-font);
+  font-family: var(--primary-font);
   background-color: var(--pipers-navy-100);
   color: #fff;
+}
 
+p {
+  font-size: var(--page-font-size);
 }
 
 html {

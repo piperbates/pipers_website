@@ -5,6 +5,12 @@
     position: relative;
     top: 50px;
     text-align: center;
+    font-size: var(--page-font-size);
+}
+
+.wrapper p {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 .header {
@@ -22,13 +28,14 @@
 }
 
 .navigation {
+    margin: auto;
     width: 500px;
-    margin: auto;;
 }
 
 .navigation ul {
     display: flex;
     list-style-type: none;
+    margin: 8px 0px;
   }
 
   .navigation li {
@@ -47,6 +54,7 @@
     margin: 0px;
     text-decoration: none;
     font-weight: bold;
+    font-size: var(--navigation-font-size);
   }
 
   .navigation a:hover {
@@ -55,11 +63,15 @@
 
 .mainHeader {
     display: flex;
+    justify-content: space-around;
+    margin: auto;
+    align-items: center;
+    width: 400px;
 }
 
 .mainHeader h1 {
-    font-size: 3em;
-    margin: auto;
+  margin: 0px;
+    font-size: var(--biggest-font);
 }
 
 .wrapper a {

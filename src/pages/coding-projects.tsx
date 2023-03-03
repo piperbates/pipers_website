@@ -21,7 +21,7 @@ export default function CreativeProjects() {
         pageImage={pageDetails.pageImage}>
           <div>
             <p>
-                I've always loved to draw, and spent 5 years as a freelance illustrator creating children's books, branding illustration, portraits and more. Here's some of my favourite pieces I've worked on!
+            Click on an item to see more information
             </p>
             
 

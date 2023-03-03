@@ -18,11 +18,9 @@ export default function Home() {
 
   return (
     <Layout pageTitle={pageDetails.pageTitle} pageImage={pageDetails.pageImage} pageHeader={pageDetails.pageHeader}>
-            <p>
-                An experienced software engineer with an eye for UI/UX design. <br />
-
-                Currently working as a Frontend Engineer for SteelBuy.
-            </p>
+            <p>An experienced software engineer with an eye for UI/UX design.</p>
+            <p>Currently working as a Frontend Engineer for SteelBuy.</p>
+            <p>Open to opportunities to either Frontend or Full Stack Engineer.</p>
             <div className={styles.techStack}>
               {
               homePageTechStack.map((tech, i)=>
