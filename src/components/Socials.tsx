@@ -14,7 +14,7 @@ export default function Socials({socials, showIcon}: SocialsPropType) {
         {socials.map((social: SocialsType, i)=>{
             if(social.name.toLowerCase() === "telephone" || social.name.toLowerCase() === "email" ) {
                 return (
-                <li>
+                <li key={i}>
                     <Image src={social.icon} alt={social.name} width="10" height="10" /> {social.link}
                 </li>)
             }

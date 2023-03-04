@@ -17,7 +17,7 @@ export default function CreativeProjects() {
         pageHeader={pageDetails.pageHeader}
         pageImage={pageDetails.pageImage}>
       <p>
-                I've always loved to draw, and spent 5 years as a freelance illustrator creating children's books, branding illustration, portraits and more. Here's some of my favourite pieces I've worked on!
+                I&apos;ve always loved to draw, and spent 5 years as a freelance illustrator creating children&apos;s books, branding illustration, portraits and more. Here&apos;s some of my favourite pieces I&apos;ve worked on!
             </p>
 
             <GalleryLayout>
