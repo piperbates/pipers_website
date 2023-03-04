@@ -1,20 +1,19 @@
-import styles from '@/styles/Home.module.css'
-import Layout from '@/components/Layouts/PageLayout'
-import { pageIdentifierImages } from '@/utils/image-declarations/pageIdentifierImages'
-import { techStack } from '@/utils/techStack'
-import Image from 'next/image'
+import styles from '@/styles/Home.module.css';
+import Layout from '@/components/Layouts/PageLayout';
+import { pageIdentifierImages } from '@/utils/image-declarations/pageIdentifierImages';
+import { techStack } from '@/utils/techStack';
+import Image from 'next/image';
 
 export default function Home() {
   const pageDetails = {
     pageTitle: 'Home',
     pageHeader: 'Piper Bates',
     pageImage: pageIdentifierImages.home.src
-  }
+  };
 
   const homePageTechStack = [
     techStack.react, techStack.redux, techStack.typescript, techStack.node
-  ]
-
+  ];
 
   return (
     <Layout pageTitle={pageDetails.pageTitle} pageImage={pageDetails.pageImage} pageHeader={pageDetails.pageHeader}>
@@ -27,9 +26,7 @@ export default function Home() {
                 <Image key={i} src={tech.logo} alt={tech.name} width={100} height={100} className={styles.techStackImg} />
                 )
             }
-          
-
             </div>
     </Layout>
   )
-}
+};

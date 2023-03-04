@@ -1,21 +1,21 @@
-import styles from '@/styles/Modal.module.css'
+import styles from '@/styles/Modal.module.css';
 import { Modal_Data } from '@/utils/context/ModalContext';
-import useOnClickOutside from '@/utils/hooks/useOnClickOutside';
+import useOnClickOutsideModal from '@/utils/hooks/useOnClickOutsideModal';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useContext, useEffect, useRef } from 'react';
+import { useContext, useRef } from 'react';
 
 export default function ModalContent () {
 
     const modalRef = useRef(null);
-    const { modalOpen, setModalOpen, modalContent, setModalContent } = useContext(Modal_Data)
+    const { setModalOpen, modalContent, setModalContent } = useContext(Modal_Data);
 
     const modalClose = () => {
         setModalOpen(false);
         setModalContent(null);
-    }
+    };
 
-    useOnClickOutside(modalRef, modalClose);  
+    useOnClickOutsideModal(modalRef, modalClose);  
 
     return <div className={styles.modalContent} ref={modalRef}>
         <button className={styles.closeButton} onClick={()=>modalClose()}>X</button>
@@ -36,9 +36,9 @@ export default function ModalContent () {
     {modalContent?.techStack &&
         <div className={styles.techStackBox}>
             {modalContent.techStack.map((tech, i)=>{
-                return <div className={styles.techStackImgWrapper}><Image key={i} src={tech.logo} alt={tech.name} fill /></div>
+                return <div className={styles.techStackImgWrapper} key={i}><Image src={tech.logo} alt={tech.name} fill className={styles.techStackImgWrapperImg} /></div>
             })}
         </div>
     }
     </div>
-}
+};

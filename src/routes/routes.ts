@@ -30,4 +30,4 @@ export const routes = {
         header: "Online CV",
         icon: cvIcon
     }
-}
+};

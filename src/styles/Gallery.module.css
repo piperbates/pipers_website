@@ -1,14 +1,16 @@
 .galleryLayout {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-shrink: 2;
 }
 
 .galleryItem {
     align-items: center;
-    width: 150px;
-    margin: 30px;
+    width: 200px;
     text-align: center;
 }
 

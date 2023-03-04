@@ -1,22 +1,21 @@
-import styles from '@/styles/Gallery.module.css'
-import ModalContext, { Modal_Data } from '@/utils/context/ModalContext'
-import { GalleryType } from '@/utils/types/GalleryTypes'
-import Image from 'next/image'
-import Link from 'next/link'
-import { useContext } from 'react'
+import styles from '@/styles/Gallery.module.css';
+import { Modal_Data } from '@/utils/context/ModalContext';
+import { GalleryType } from '@/utils/types/GalleryTypes';
+import Image from 'next/image';
+import { useContext } from 'react';
 
 export default function GalleryItem ({
     title, description, imageSrc, imageAlt, githubLink, liveLink, techStack
 }: GalleryType
 ) {
-    const { modalOpen, setModalOpen, setModalContent } = useContext(Modal_Data)
+    const { setModalOpen, setModalContent } = useContext(Modal_Data);
 
     const handleClick = () => {
         setModalOpen(true)
         setModalContent({
             title, description, imageSrc, imageAlt, githubLink, liveLink, techStack
         })
-    }
+    };
 
     return (
     <div className={styles.galleryItem} onClick={()=>{handleClick()}}>
@@ -31,4 +30,4 @@ export default function GalleryItem ({
         </div>
     </div>
     )
-}
+};

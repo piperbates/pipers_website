@@ -1,5 +1,5 @@
-import { Html, Head, Main, NextScript } from 'next/document'
-import { Patrick_Hand } from 'next/font/google'
+import { Html, Head, Main, NextScript } from 'next/document';
+// import { Patrick_Hand } from 'next/font/google';
 
 export default function Document() {
   return (
@@ -14,4 +14,4 @@ export default function Document() {
       </body>
     </Html>
   )
-}
+};

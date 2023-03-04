@@ -1,9 +1,12 @@
-/*
-
-Am in the process of moving these styles into navigation component because the nav styles are getting chonkier
 .navigation {
     margin: auto;
-    width: 500px;
+    max-width: var(--max-width);
+}
+
+.navigation img {
+    margin-right: 10px;
+    color: white;
+    filter: white;
 }
 
 .navigation ul {
@@ -33,4 +36,56 @@ Am in the process of moving these styles into navigation component because the n
 
   .navigation a:hover {
     text-decoration: underline;
-} */
+}
+
+.toggleButton {
+  display: none;
+}
+
+@media (max-width: 700px) {
+    .navigation ul {
+        padding: 10px;
+        border-radius: 10px;
+        background-color: var(--pipers-blue-100);
+        display: block;
+    }
+
+    .navigation li {
+       margin-bottom: 10px;
+      }
+
+
+  .navigation li:not(:last-child)::after {
+    content: none;
+  }
+    
+    .toggleButton {
+      display: unset;
+      background-color: inherit;
+      font-family: var(--primary-font);
+      font-size: 1.5em;
+      border: 0px;
+      cursor: pointer;
+      padding: 5px;
+      width: 150px;
+      color: #fff;
+      margin: auto;
+    }
+
+    .toggleButton:hover {
+      border-radius: 20px;;
+      box-shadow: 0px 2px 5px var(--pipers-navy-100);
+    }
+
+    .toggleButton:active {
+      background-color: var(--pipers-blue-50);
+    }
+
+    .navOpen {
+        display: unset;
+    }
+    
+    .navClosed {
+        display: none;
+    }
+}

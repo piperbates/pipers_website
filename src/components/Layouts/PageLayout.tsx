@@ -1,22 +1,22 @@
-import styles from '@/styles/Layout.module.css'
-import Image from 'next/image'
-import { motion } from 'framer-motion'
-import FloatingSocials from '../FloatingSocials'
-import Modal from './ModalLayout'
-import { useContext, useEffect } from 'react'
-import { Modal_Data } from '@/utils/context/ModalContext'
-import { Navigation } from '../navigation'
+import styles from '@/styles/Layout.module.css';
+import Image from 'next/image';
+import { motion } from 'framer-motion';
+import FloatingSocials from '../FloatingSocials';
+import Modal from './ModalLayout';
+import { useContext, useEffect } from 'react';
+import { Modal_Data } from '@/utils/context/ModalContext';
+import { Navigation } from '../Navigation';
 
 type LayoutProps = {
     children: React.ReactNode,
     pageTitle: string,
     pageHeader: string,
     pageImage: string,
-}
+};
 
 export default function Layout({children, pageTitle, pageHeader, pageImage}: LayoutProps) {
     
-    const { modalOpen } = useContext(Modal_Data)
+    const { modalOpen } = useContext(Modal_Data);
 
     useEffect(()=>{
         if(modalOpen){
@@ -25,7 +25,7 @@ export default function Layout({children, pageTitle, pageHeader, pageImage}: Lay
           document.body.style.overflow = 'unset';
     
         }
-      }, [modalOpen])
+      }, [modalOpen]);
 
 return (
 <>
@@ -55,4 +55,4 @@ return (
     <FloatingSocials />
 </>
 )
-}
+};

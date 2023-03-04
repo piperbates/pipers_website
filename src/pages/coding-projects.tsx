@@ -1,18 +1,15 @@
-import styles from '@/styles/CodingProjects.module.css'
-import Layout from '@/components/Layouts/PageLayout'
-import { pageIdentifierImages } from '@/utils/image-declarations/pageIdentifierImages'
-import { codingProjects } from '@/utils/coding_projects'
-import GalleryLayout from '@/components/Layouts/GalleryLayout'
-import GalleryItem from '@/components/GalleryItem'
-import { projectInfo } from '@/utils/projectInfo'
-import { techStack } from '@/utils/techStack'
+import Layout from '@/components/Layouts/PageLayout';
+import { pageIdentifierImages } from '@/utils/image-declarations/pageIdentifierImages';
+import { codingProjects } from '@/utils/coding_projects';
+import GalleryLayout from '@/components/Layouts/GalleryLayout';
+import GalleryItem from '@/components/GalleryItem';
 
 export default function CreativeProjects() {
   const pageDetails = {
     pageTitle: 'Coding Projects',
     pageImage: pageIdentifierImages.codingProjects.src,
     pageHeader: 'Coding Projects'
-  }
+  };
 
   return (
     <Layout 
@@ -42,4 +39,4 @@ export default function CreativeProjects() {
       </div>
     </Layout>
   )
-}
+};

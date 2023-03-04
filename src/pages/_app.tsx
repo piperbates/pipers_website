@@ -5,7 +5,7 @@ import ModalContext from '@/utils/context/ModalContext';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 
-config.autoAddCss = false
+config.autoAddCss = false;
 // import { Roboto } from 'next/font/google'
 // TODO - There's a bug in next/fonts 
 // - https://github.com/vercel/next.js/issues/44433
@@ -28,4 +28,4 @@ export default function App({ Component, pageProps }: AppProps) {
     </ModalContext>
     </>
     )
-}
+};

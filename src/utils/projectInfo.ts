@@ -13,26 +13,6 @@ const {
 } = codingProjectImages;
 
 export const projectInfo = {
-// BOOK ORCHARD
-bookOrchard: {
-    projectTitle: 'Book Orchard',
-    projectDescription: 'A book categoration app designed for book hoarders and collectors',
-    image: {
-        source: bookOrchard,
-        description: 'A screenshot of the app Book Orchard. Currently in development. Originally created as a small scale app to help my partner organise her extensive (and unorganised) book collection, but soon discovered many other people in the same boat!'
-    },
-    techStack: [
-        techStack.react,
-        techStack.javascript,
-        techStack.html,
-        techStack.css,
-        techStack.node,
-    ],
-    links: {
-        liveLink: '',
-        githubLink: ''
-    }
-}, 
 
 // All Pokemon Quiz
 pokemonQuiz: {
@@ -109,6 +89,27 @@ recap: {
     links: {
         liveLink: '',
         githubLink: 'https://github.com/piperbates/front-end-final-project-code-goblins'
+    }
+}, 
+
+// BOOK ORCHARD
+bookOrchard: {
+    projectTitle: 'Book Orchard',
+    projectDescription: 'A book categoration app designed for book hoarders and collectors. This started life as a personal project to help my partner organise their extensive library, but is evolving into a wider scale application for multiple users to catalogue their book collection. This github repo currently showcases the personal project but will be linked to the project repo once there is more to show!',
+    image: {
+        source: bookOrchard,
+        description: 'A screenshot of the app Book Orchard. Currently in development. Originally created as a small scale app to help my partner organise her extensive (and unorganised) book collection, but soon discovered many other people in the same boat!'
+    },
+    techStack: [
+        techStack.react,
+        techStack.javascript,
+        techStack.html,
+        techStack.css,
+        techStack.node,
+    ],
+    links: {
+        liveLink: '',
+        githubLink: 'https://github.com/piperbates/back-end-patricks-bookcase'
     }
 }, 
 

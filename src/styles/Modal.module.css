@@ -32,7 +32,15 @@
   padding: 10px;
   overflow: scroll;
   border: 5px solid var(--pipers-blue-100)
+}
 
+.modalContent a {
+  color: var(--pipers-navy-100);
+}
+
+.modalContent a:hover {
+  color: var(--pipers-navy-50);
+  text-decoration: none;
 }
 
 .modalContentImageBox { 
@@ -42,6 +50,7 @@
   margin: auto; 
   padding: 0;
 }
+
 .modalContentImageBox img {
   border: 2px solid var(--pipers-navy-100);
   border-radius: 20px;
@@ -61,6 +70,14 @@
 }
 
 .techStackImgWrapper {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+
+.techStackImgWrapperImg {
   position: relative;
   width: 50px;
   height: 50px;

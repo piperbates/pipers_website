@@ -1,16 +1,15 @@
-import styles from '@/styles/Creativeprojects.module.css'
-import Layout from '@/components/Layouts/PageLayout'
-import { pageIdentifierImages } from '@/utils/image-declarations/pageIdentifierImages'
-import GalleryItem from '@/components/GalleryItem'
-import GalleryLayout from '@/components/Layouts/GalleryLayout'
-import { creativeProjects } from '@/utils/creative_projects'
+import Layout from '@/components/Layouts/PageLayout';
+import { pageIdentifierImages } from '@/utils/image-declarations/pageIdentifierImages';
+import GalleryItem from '@/components/GalleryItem';
+import GalleryLayout from '@/components/Layouts/GalleryLayout';
+import { creativeProjects } from '@/utils/creative_projects';
 
 export default function CreativeProjects() {
   const pageDetails = {
     pageTitle: 'Creative Projects',
     pageImage: pageIdentifierImages.creativeProjects.src,
     pageHeader: 'Creative Projects'
-  }
+  };
 
   return (
     <Layout 
@@ -34,4 +33,4 @@ export default function CreativeProjects() {
           </GalleryLayout>
     </Layout>
   )
-}
+};

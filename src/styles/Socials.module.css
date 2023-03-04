@@ -1,6 +1,8 @@
 .socials {
     margin-top: 20px;
     padding: 0px;
+    color: var(--pipers-blue-25)
+
 }
 
 .socials ul {

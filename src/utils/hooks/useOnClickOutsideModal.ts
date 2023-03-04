@@ -1,9 +1,10 @@
 import { BaseSyntheticEvent, useEffect } from 'react';
 
-export default function useOnClickOutside(
+// Ideally I'd like to have just one useOnClickOutside hook but this is a temporary solution until I come up with a better one
+
+export default function useOnClickOutsideModal(
   ref: React.RefObject<HTMLDivElement>,
   handler: any) { //TODO: Part of the modal type safing task
-
     
   useEffect(
     () => {

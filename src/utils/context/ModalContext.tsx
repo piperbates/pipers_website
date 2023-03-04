@@ -3,21 +3,21 @@ import { GalleryType } from '../types/GalleryTypes';
 
 type ModalContextTypes = {
     children: React.ReactNode
-}
+};
 
 type ModalDataTypes = {
     modalOpen: boolean,
     setModalOpen: Dispatch<SetStateAction<boolean>>,
     modalContent: GalleryType | null,
     setModalContent: Dispatch<SetStateAction<GalleryType | null>>
-}
+};
 
 export const Modal_Data = createContext<ModalDataTypes>({
     modalOpen: false,
     setModalOpen: () => {},
     modalContent: null,
     setModalContent: () => {}
-})
+});
 
 export default function ModalContext ({children}: ModalContextTypes) {
     const [modalOpen, setModalOpen] = useState(false);
@@ -28,4 +28,4 @@ export default function ModalContext ({children}: ModalContextTypes) {
           {children}
         </Modal_Data.Provider>
       );
-}
+};
