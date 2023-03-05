@@ -1,4 +1,4 @@
-import artEveryHour from '../../images/codingProjectImages/artEveryHour.png';
+import artEveryHour from '../../images/codingProjectImages/arteveryhour.png';
 import bookOrchard from '../../images/codingProjectImages/book-orchard.png';
 import drawingGame from '../../images/codingProjectImages/drawinggame.png';
 import mentorMatch from '../../images/codingProjectImages/mentormatch.png';
