@@ -42,7 +42,7 @@
   display: none;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
     .navigation ul {
         padding: 10px;
         border-radius: 10px;
