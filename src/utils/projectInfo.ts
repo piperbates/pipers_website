@@ -167,7 +167,7 @@ pokemonGenerator: {
         techStack.javascript,
     ],
     links: {
-        liveLink: 'https://piperbates.github.io/pokemon-card-generator/',
+        liveLink: ' https://pipers-pokemon-app.netlify.app/',
         githubLink: 'https://github.com/piperbates/pokemon-card-generator'
     }
 }, 
