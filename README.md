@@ -10,3 +10,4 @@ I'm also planning on putting an Online CV (with downloadable PDF version!) into 
 * The custom hook `useOnOutsideClick` has some `any` typing
 * Annoying basic fonts, Next JS doesn't seem to want to have the fonts work
 * Images have preset widths so the images look icky on the modal
+*
