@@ -1,8 +1,12 @@
-import styles from '@/styles/Home.module.css';
+import Image from 'next/image';
 import Layout from '@/components/Layouts/PageLayout';
 import { pageIdentifierImages } from '@/utils/image-declarations/pageIdentifierImages';
 import { techStack } from '@/utils/techStack';
-import Image from 'next/image';
+import mugshot from '@/images/piperface.jpeg';
+import styles from '@/styles/Home.module.css';
+import Socials from '@/components/Socials';
+import { socials } from '@/utils/socials';
+
 
 export default function Home() {
   const pageDetails = {
@@ -17,9 +21,21 @@ export default function Home() {
 
   return (
     <Layout pageTitle={pageDetails.pageTitle} pageImage={pageDetails.pageImage} pageHeader={pageDetails.pageHeader}>
-            <p>An experienced software engineer with an eye for UI/UX design.</p>
-            <p>Currently working as a Frontend Engineer for SteelBuy.</p>
-            <p>Open to opportunities to either Frontend or Full Stack Engineer.</p>
+            <div className={styles.mugshotBox}>
+        <Image src={mugshot} alt="A selfie of Piper" width={100} height={100} className={styles.mugshot}/>
+      </div>
+
+      <p>Having worked as an illustrator for five years, I took a bold leap of faith in 2020 and enrolled in a four-month coding bootcamp. It was during this program that I discovered my passion for software development, particularly in the realm of Front End development. I thrive in Agile environments where I can contribute to the success of a project and make a difference.</p>
+
+      <p>I also mentor for the School of Code and occasionally do talks about diversity and inclusivity in tech. </p>
+            
+      <div className={styles.aboutSocialsBox}>
+        <h2>Contact me:</h2>
+        <Socials socials={socials}/>
+      </div>
+            
+            
+            
             <div className={styles.techStack}>
               {
               homePageTechStack.map((tech, i)=>

@@ -3,9 +3,6 @@ import githubIcon from '@/images/icons/github.svg';
 import linkedInIcon from '@/images/icons/linkedin.svg';
 import telephoneIcon from  '@/images/icons/phone-solid.svg';
 import emailIcon from  '@/images/icons/envelope-solid.svg';
-import medium from  '@/images/icons/medium.svg';
-
-
 
 export type SocialsType = {
     name: string,
@@ -33,10 +30,5 @@ export const socials: SocialsType[] = [
         name: "LinkedIn",
         icon: linkedInIcon,
         link: 'https://www.linkedin.com/in/piperbates/'
-    },
-    {
-        name: "Blog",
-        icon: medium,
-        link: 'https://medium.com/@piperbates'
     }
 ]

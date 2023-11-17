@@ -9,10 +9,29 @@ const {
     drawingGame, 
     pokemonGen, 
     rps, 
-    pokemonQuiz 
+    pokemonQuiz,
+    pipersArtWebsite
 } = codingProjectImages;
 
 export const projectInfo = {
+
+// Piper Art website
+piperArtSite: {
+    projectTitle: 'My Art Portfolio',
+    projectDescription: 'My art portfolio',
+    image: {
+        source: pipersArtWebsite,
+        description: 'Screenshot of Pipers Art Website'
+    },
+    techStack: [
+        techStack.react,
+        techStack.typescript
+    ],
+    links: {
+        liveLink: 'http://www.piperstrange.co.uk',
+        githubLink: 'https://github.com/piperbates/art_website'
+    }
+},
 
 // All Pokemon Quiz
 pokemonQuiz: {

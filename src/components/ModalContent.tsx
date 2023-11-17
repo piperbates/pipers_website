@@ -18,7 +18,7 @@ export default function ModalContent () {
     useOnClickOutsideModal(modalRef, modalClose);  
 
     return <div className={styles.modalContent} ref={modalRef}>
-        <button className={styles.closeButton} onClick={()=>modalClose()}>X</button>
+        <button className={styles.closeButton} onClick={()=>modalClose()}>x</button>
         
         <h1>{modalContent?.title}</h1>
 
