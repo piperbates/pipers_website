@@ -6,6 +6,7 @@ import mugshot from '@/images/piperface.jpeg';
 import styles from '@/styles/Home.module.css';
 import Socials from '@/components/Socials';
 import { socials } from '@/utils/socials';
+import pressStart2P from '@/utils/pressStart2P';
 
 
 export default function Home() {
@@ -30,7 +31,7 @@ export default function Home() {
       <p>I also mentor for the School of Code and occasionally do talks about diversity and inclusivity in tech. </p>
             
       <div className={styles.aboutSocialsBox}>
-        <h2>Contact me:</h2>
+        <h2 className={pressStart2P.className}>Contact me:</h2>
         <Socials socials={socials}/>
       </div>
             

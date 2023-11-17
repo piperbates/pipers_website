@@ -6,17 +6,13 @@ import ModalContext from '@/utils/context/ModalContext';
 // import '@fortawesome/fontawesome-svg-core/styles.css';
 
 // config.autoAddCss = false;
-// import { Roboto } from 'next/font/google'
+
 // TODO - There's a bug in next/fonts 
 // - https://github.com/vercel/next.js/issues/44433
 // can't import fonts this way until this is fixed
 
 export default function App({ Component, pageProps }: AppProps) {
 
-  // const roboto = Roboto({
-  //   weight: '400',
-  //   subsets: ['latin']
-  // })
 
   return (<>
     <Head>

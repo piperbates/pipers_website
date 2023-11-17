@@ -3,6 +3,7 @@ import { Modal_Data } from '@/utils/context/ModalContext';
 import { GalleryType } from '@/utils/types/GalleryTypes';
 import Image from 'next/image';
 import { useContext } from 'react';
+import pressStart2P from '@/utils/pressStart2P';
 
 export default function GalleryItem ({
     title, description, imageSrc, imageAlt, githubLink, liveLink, techStack
@@ -20,7 +21,7 @@ export default function GalleryItem ({
     return (
     <div className={styles.galleryItem} onClick={()=>{handleClick()}}>
         <div className={styles.galleryItemHeader}>
-            <h1>{title}</h1>
+            <h1 className={pressStart2P.className}>{title}</h1>
         </div>
 
         <div className={styles.galleryItemContent}>

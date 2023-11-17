@@ -6,6 +6,8 @@ import Modal from './ModalLayout';
 import { useContext, useEffect } from 'react';
 import { Modal_Data } from '@/utils/context/ModalContext';
 
+import pressStart2P from '@/utils/pressStart2P';
+
 import { routes } from '@/routes/routes';
 import useOnClickOutsideNav from '@/utils/hooks/useOnClickOutsideNav';
 import Link from 'next/link';
@@ -73,7 +75,7 @@ return (
         }}
          >
             <div className={styles.mainHeader}>
-                <h1>{pageHeader}</h1>
+                <h1 className={pressStart2P.className}>{pageHeader}</h1>
                 <Image src={pageImage} alt={`${pageTitle} image`} width={100} height={100} />
             </div>
             {children}
