@@ -8,4 +8,3 @@ I'm also planning on putting an Online CV (with downloadable PDF version!) into 
 
 ## A few todos...
 * The custom hook `useOnOutsideClick` has some `any` typing
-* Images have preset widths so the images look icky on the modal
