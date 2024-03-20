@@ -1,10 +1,30 @@
-# Pipers Website 2.0
+# React + TypeScript + Vite
 
-It'd been 2 years since I made this website and it was time for an upgrade. I've kept the general layout the same, it's still a one page scrolling website but now with added TypeScript to make it type safe, and the components are a lot neater. There are some bugs which I'm addressing, as well as some typing that I got lazy with that is being fixed.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Now I think I need to update some of those projects on the coding projects page because, err, yeah, they're also a little out dated and not examples of my best work!!
+Currently, two official plugins are available:
 
-I'm also planning on putting an Online CV (with downloadable PDF version!) into the page but that's going to involve a bit of structuring before it works and I wanted to get some kind of update out before I did that (some of the basics of it are already are in the codebase though).
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## A few todos...
-* The custom hook `useOnOutsideClick` has some `any` typing
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+
+- Configure the top-level `parserOptions` property like this:
+
+```js
+export default {
+  // other rules...
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: ['./tsconfig.json', './tsconfig.node.json'],
+    tsconfigRootDir: __dirname,
+  },
+}
+```
+
+- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
+- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
