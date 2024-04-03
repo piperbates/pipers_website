@@ -1,0 +1,10 @@
+.container {
+    width: 420px;
+    margin: auto;
+}
+
+.mainContent {
+    padding-top: 200px;
+    height: 100%;
+    border-bottom: 2px solid black;
+}
