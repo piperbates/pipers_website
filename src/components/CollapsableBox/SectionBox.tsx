@@ -8,15 +8,17 @@ import styles from './CollapsableBox.module.css';
 type SectionBoxTypes = {
     title: string,
     titleSmall?: boolean,
+    openOnLoad?: boolean
     children: React.ReactNode
 };
 
 export const SectionBox = ({
     title,
     titleSmall,
+    openOnLoad,
     children,
 }: SectionBoxTypes) => {
-    const [isExpanded, setIsExpanded] = useState(false);
+    const [isExpanded, setIsExpanded] = useState(openOnLoad);
 
     const newTitle = `${title} ${isExpanded ? "V" : ">"}`;
 

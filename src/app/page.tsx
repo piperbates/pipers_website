@@ -14,7 +14,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <MainLayout>
-      <SectionBox title="About">
+      <SectionBox title="About" openOnLoad>
         {about.map((paragraph, key) =>
           <StyledP key={key}>
             {paragraph}
