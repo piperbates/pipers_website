@@ -1,6 +1,21 @@
-import { techStackImages } from './image-declarations/techStackImages';
+import { techStackImages } from './imageDeclarations';
 
-const { react, typescript, redux, html, css, javascript, shopify, node, twitter, vimeo, reactAdmin, mongo, aws, antDesign } = techStackImages
+const { 
+    react, 
+    typescript, 
+    redux, 
+    html, 
+    css, 
+    javascript, 
+    shopify, 
+    node, 
+    twitter, 
+    vimeo, 
+    reactAdmin, 
+    mongo, 
+    aws, 
+    antDesign 
+} = techStackImages;
 
 export type TechStackType = {
     name: string,
@@ -64,4 +79,4 @@ export const techStack = {
         name: 'Ant Design',
         logo: antDesign.logo.src
     }
-}
+};

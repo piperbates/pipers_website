@@ -1,0 +1,30 @@
+
+.box {
+    width: 100%;
+    border-top: 10px solid black;
+    background-color: #0E79B2;
+    text-align: justify;
+}
+
+.boxContent {
+    overflow: hidden;
+}
+
+.boxSmall {
+    height: 0px;
+    transition: 0.4s linear;
+}
+
+.boxExpanded {
+    height: auto;
+    padding: 10px;
+    transition: 0.4s linear;
+    transform: scaleY(100%);
+}
+
+.titleButton {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    margin-bottom: 10px;
+}

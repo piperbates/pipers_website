@@ -1,0 +1,44 @@
+.header {
+    text-align: left;
+}
+
+.header1, .header2 {
+    font-size: 20px;
+    letter-spacing: .09em;
+    padding: 30px 10px 10px;
+}
+
+.header1 {
+    color: black;
+}
+
+.header2 {
+    color: var(--pipers-blue);
+
+}
+
+.header3 {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 24px;
+}
+
+
+.header4 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.smallText {
+    font-size: 12px;
+    padding-left: 10px;
+    text-decoration: underline;
+}
+
+.paragraph {    
+    margin-bottom: 20px;
+}
+
+.span {    
+    margin: 4px;
+}
