@@ -1,10 +1,96 @@
 .container {
-    width: 420px;
+    width: 80%;
     margin: auto;
 }
 
 .mainContent {
-    padding-top: 200px;
     height: 100%;
     border-bottom: 2px solid black;
+}
+
+.header {
+    width: 100%;
+    border-top: 10px solid black;
+    border-bottom: 10px solid white;
+    background-color: var(--pipers-blue);
+    padding: 4px;
+    z-index: 5;
+}
+
+.linkBox {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px;
+}
+.linkBox p, .linkBox a {
+    font-size: 14px;
+}
+
+.linkBox div:last-child {
+    text-align: right;
+}
+
+.links a {
+    display: block;
+}
+
+.cvBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.pipersInfo {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+}
+
+.header a {
+    color: black;
+}
+
+.header a:hover {
+    font-weight: bold;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* Tablet */
+@media (min-width: 701px) and (max-width: 1120px) {
+    .container {
+        width: 620px;
+    }
+
+    .header {
+        justify-content: center;
+    }
+
+    }
+
+
+/* Mobile */
+@media (max-width: 700px) {
+
+.container {
+    width: 420px;
+}
+
+.pipersInfo {
+    flex-direction: column;
+    justify-content: center;
+    width: unset;
+}
+
+.linkBox {
+    padding-top: 10px;
+}
+.linkBox p {
+    text-align: left;
+}
+
 }

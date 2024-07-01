@@ -9,7 +9,6 @@ import {
 } from "@/components/SectionBoxes/SectionBox";
 import { about } from "@/utils/data/about";
 import { projects } from "@/utils/data/projects";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -21,18 +20,38 @@ export default function Home() {
           </StyledP>)}
       </SectionBox>
 
+      <SectionBox title="Projects">
+        {projects.map(
+          (project, key) => {
+            const isBoxFirst = key === 0;
+            return (
+              <ProjectBox project={project} key={key} openOnLoad={isBoxFirst} />
+            );
+          }
+        )}
+      </SectionBox>
+
       <SectionBox title="Experience">
         {
-          experience.map((item, key) =>
-            <ExperienceBox company={item} key={key} />
+          experience.map((item, key) => {
+            const isBoxFirst = key === 0;
+            return (
+              <ExperienceBox company={item} key={key} openOnLoad={isBoxFirst} />
+            );
+          }
           )}
       </SectionBox>
 
       <SectionBox title="Interview Questions">
         {
           faq.map((item, key) => {
+            const isBoxFirst = key === 0;
             return (
-              <SectionBox key={key} titleSmall title={item.question}>
+              <SectionBox
+                key={key}
+                titleSmall
+                title={item.question}
+                openOnLoad={isBoxFirst}>
                 {item.answer.map((answer, key) =>
                   <StyledP
                     key={key}>
@@ -42,13 +61,6 @@ export default function Home() {
               </SectionBox>);
           })
         }
-      </SectionBox>
-
-      <SectionBox title="Projects">
-        {projects.map(
-          (project, key) =>
-            <ProjectBox project={project} key={key} />
-        )}
       </SectionBox>
     </MainLayout>
   );

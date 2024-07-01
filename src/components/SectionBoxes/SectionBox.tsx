@@ -7,9 +7,17 @@ import { projectTypes } from "@/utils/data/projects";
 import Image from "next/image";
 import Link from "next/link";
 
-export const ExperienceBox = ({ company }: { company: experienceTypes }) => {
+type ExperienceBoxProps = {
+    company: experienceTypes,
+    openOnLoad?: boolean
+}
+
+export const ExperienceBox = ({
+    company,
+    openOnLoad
+}: ExperienceBoxProps) => {
     return (
-        <SectionBox titleSmall title={company.company}>
+        <SectionBox titleSmall title={company.company} openOnLoad={openOnLoad}>
             <div className={styles.experienceBox}>
                 <StyledH4>{company.jobTitle}</StyledH4>
                 <SmallText>
@@ -42,17 +50,27 @@ export const ExperienceBox = ({ company }: { company: experienceTypes }) => {
     );
 };
 
-export const ProjectBox = ({ project }: { project: projectTypes }) => {
+type ProjectBoxProps = { project: projectTypes, openOnLoad?: boolean }
+
+export const ProjectBox = ({
+    project,
+    openOnLoad
+}: ProjectBoxProps) => {
     return (
-        <SectionBox titleSmall title={project.projectTitle}>
+        <SectionBox
+            titleSmall
+            title={project.projectTitle}
+            openOnLoad={openOnLoad}>
+
             <div className={styles.experienceBox}>
-                <div className={styles.projectHeader}><Image
-                    alt={project.image.description}
-                    src={project.image.source}
-                    width="100"
-                    height="100"
-                    style={{ borderRadius: 50, margin: 10 }}
-                />
+                <div className={styles.projectHeader}>
+                    <Image
+                        alt={project.image.description}
+                        src={project.image.source}
+                        width="100"
+                        height="100"
+                        style={{ borderRadius: 50, margin: 10 }}
+                    />
                     <ul className={styles.techStack}>
                         {project.techStack.map(
                             (tech, key) => <li key={key}>{tech.name}</li>)}
@@ -61,18 +79,23 @@ export const ProjectBox = ({ project }: { project: projectTypes }) => {
                 <StyledP>{project.projectDescription}</StyledP>
                 <div>
                     <ul>
-                        <li>
-                            <Link
-                                href={project.links.githubLink}
-                                target="_blank">View on Github
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                href={project.links.liveLink}
-                                target="_blank">View Live
-                            </Link>
-                        </li>
+                        {
+                            project.links.githubLink ? <li>
+                                <Link
+                                    href={project.links.githubLink}
+                                    target="_blank">View on Github
+                                </Link>
+                            </li> : null
+                        }
+                        {
+                            project.links.liveLink ? <li>
+                                <Link
+                                    href={project.links.liveLink}
+                                    target="_blank">View Live
+                                </Link>
+                            </li>
+                                : null
+                        }
                     </ul>
                 </div>
             </div>

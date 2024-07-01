@@ -7,7 +7,10 @@ import artEveryHour from '../../assets/codingProjectImages/artEveryHour.png';
 import recap from '../../assets/codingProjectImages/recap.png';
 import bookOrchard from '../../assets/codingProjectImages/bookOrchard.png';
 import drawingGame from '../../assets/codingProjectImages/drawinggame.png';
+import touchlineTech from '../../assets/codingProjectImages/tt-logo.png';
+
 import { TechStackType, techStack } from '../techStack';
+import { Url } from 'next/dist/shared/lib/router/router';
 
 export type projectTypes = {
     projectTitle: string,
@@ -18,14 +21,31 @@ export type projectTypes = {
     },
     techStack: TechStackType[],
     links: {
-        liveLink: string,
-        githubLink: string
+        liveLink?: Url,
+        githubLink?: Url
     }
 }
 
 
 
 export const projects: projectTypes[] = [
+
+
+    // Touchline Tech
+    {
+        projectTitle: 'Touchline Tech',
+        projectDescription: 'A startup helping grassroots football clubs connect to their fanbase and get sponsors. This is an entirely volunteer run project as the business has had some serious financial issues due to previous development teams causing huge set backs. I brought more developers onto the project and have been acting as the front end tech lead since 2022.',
+        image: {
+            source: touchlineTech.src,
+            description: 'The touchline tech logo'
+        },
+        techStack: [
+            techStack.react,
+            techStack.typescript
+        ],
+        links: {
+        }
+    },
 
     // Piper Art website
     {
@@ -78,7 +98,6 @@ export const projects: projectTypes[] = [
         ],
         links: {
             liveLink: 'https://welovepurely.com/',
-            githubLink: ''
         }
     }, 
     
